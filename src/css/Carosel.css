@@ -1,0 +1,30 @@
+.container {
+    border: 1px solid black;
+    width: 750px;
+    height: 300px;
+    display: flex;
+}
+
+.imgMain {
+    position: relative;
+    width: 750px;
+    height: 300px;
+}
+
+.btn_prev {
+    position: absolute;
+    top: 130px;
+    left: 20px;
+    color: white;
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+.btn_next {
+    position: absolute;
+    top: 130px;
+    left: 700px;
+    color: white;
+    cursor: pointer;
+    border: 1px solid black;
+}
