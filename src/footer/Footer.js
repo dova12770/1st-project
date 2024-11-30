@@ -1,6 +1,10 @@
 import { useState } from 'react';
 import './Footer.css';
 import { FaApple } from "react-icons/fa";
+import { IoLogoAndroid } from "react-icons/io";
+import { FiHelpCircle } from "react-icons/fi";
+import { AiOutlineCopyrightCircle } from "react-icons/ai";
+import { BsArrowRightShort } from "react-icons/bs";
 
 function Footer() {
 
@@ -21,14 +25,14 @@ function Footer() {
                     </div>
                     <div className='footerMiddle'>
                         <div className='footerMiddleLeft'>
-                            <h4>프리즘 고객센터</h4>
-                            <p>채팅 상담하기</p>
-                            <p>문의 등록하기</p>
-                            <p>도움말 바로가기</p>
+                            <h4><FiHelpCircle /> 프리즘 고객센터</h4>
+                            <p>채팅 상담하기 <BsArrowRightShort /></p>
+                            <p>문의 등록하기 <BsArrowRightShort /></p>
+                            <p>도움말 바로가기 <BsArrowRightShort /></p>
                         </div>
                         <div className='footerMiddleRight'>
                             <p style={{paddingTop:'30px'}}>프리즘㈜ <span>|</span> 대표이사 홍길동 <span>|</span> 사업자등록번호 12-3725-456 <span>|</span> 통신판매업신고번호 2024-천안-1130 <span>|</span> 충청남도 천안시 동남구 천안로 12 프리즘빌딩 101호</p>
-                            <br></br><p>이메일 상담 info@prism.kr | 유선 상담 1515-1515 prism Co.,Ltd</p>
+                            <br></br><p>이메일 상담 info@prism.kr <span>|</span> 유선 상담 1515-1515 <AiOutlineCopyrightCircle /><span style={{fontWeight:700, color:'rgb(53, 53, 53)'}}>prism Co.,Ltd</span></p>
                             <br></br><br></br>
                             <p className='footerMiddleRightText'>일부 상품의 경우 프리즘은 통신판매중개자이며 통신판매 당사자가 아닙니다.</p><br></br><p className='footerMiddleRightText'>해당되는 상품의 경우 상품, 상품정보, 거래에 관한 의무와 책임은 판매자에게 있으므로, 각 상품 페이지에서 구체적인 내용을 확인하시기 바랍니다.</p>
                             <br></br><br></br>
@@ -42,8 +46,9 @@ function Footer() {
                             <p style={{fontWeight:'100', lineHeight:'20px'}}>평일 오전 9시 ~ 오후 6시 (주말, 공휴일 가능)</p>
                         </div>
                         <div className='footerBottomRight'>
-                            <p><FaApple />Android앱</p>
-                            <p>iOS앱</p>
+                            <p><IoLogoAndroid size={20} color='rgb(60,60,60)' />Android앱</p>
+                            <div>　　</div>
+                            <p><FaApple size={20} color='rgb(60,60,60)' />iOS앱</p>
                         </div>
                     </div>
                 </div>
