@@ -1,0 +1,29 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.numBer{
+    display: flex;
+    flex-direction: row;
+}
+
+.toprank{
+    margin: 20px;
+    width:300px;
+    height: 100px;
+}
+
+.topimg{
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;   
+    cursor: pointer;
+}
+
+.topimg:hover{
+    transform: scale(1.05);
+    transition: 0.7s;
+    
+}
