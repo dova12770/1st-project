@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.MyPage_Container {
+    margin: 80px;
+    width: 80%;
+}
+
+.Prof_Container {
+    margin: auto;
+    margin-left: 10px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.Avatar {
+    display: flex;
+    float: left;
+    width: 20%;
+}
+
+.UserName {
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    width:80%;
+    padding:10px;
+    font-size: 25px;
+}
+
+.OptionGear{
+    padding-left: 10px;
+    font-size: 25px;
+}
+
+.Prof_button{
+    padding: 10px;
+    width: 150px;
+    border: 1px solid green;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+}
+
+li {
+    margin-top: 10px;
+    font-size: 20px;
+    margin-left: 6rm;
+    padding-left: 10px;
+}
+
+.GreenLine {
+    border-bottom: 2px solid green ;
+}
+/* li: {
+    border-bottom: 2px solid green ;
+} */
