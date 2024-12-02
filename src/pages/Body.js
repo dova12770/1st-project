@@ -1,15 +1,21 @@
+import Advertisement from "./Advertisement";
+import Rank from "./Rank";
+import More from "./More";
+import '../css/Body.css';
 
 
+function Body() {
 
-function Body(){
-
-    return(
+    return (
         <div>
-            <div>광고창 <p>취향맞춤프로젝트</p></div> {/* 슬라이더 */}
-            <div>실시간 랭킹</div> {/*  */}
-
-        </div>
-    );
+            <div className="bodyaside">
+                <div> <div><Advertisement/></div>
+                    <div><More/></div>
+                    </div>
+                    <div><Rank/></div>
+                </div>
+            </div>
+            );
 }
 
-export default Body;
+            export default Body;
