@@ -1,9 +1,9 @@
 import './Ptcrpg.css';
 
-function Ptcrpg(){
+function Ptcrpg() {
     return(
         <>
-            <div>
+            <div className='container'>
                 
             </div>
         </>

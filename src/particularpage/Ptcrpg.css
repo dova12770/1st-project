@@ -1,0 +1,18 @@
+* {
+    background-color: green;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    margin: auto;
+    margin-top: 50px;
+    width: 85%;
+    height: 1000px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    position: relative;     /* 상대 위치 설정 */
+    z-index: 1;     /* 컨테이너의 레이어 순서 설정 */
+}
