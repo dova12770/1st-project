@@ -5,9 +5,10 @@ import TopDown from "./topdown/TopDown";
 
 function App() {
 
-  //return <Footer />;
+  return <Footer />;
+  //return <TopDown/>;
   //return <Prtpage/>;
-  return <TopDown/>;
+
 
 }
 
