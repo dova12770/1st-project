@@ -160,7 +160,7 @@
     border-radius: 10px;
     height: 100px;
     width: 80px;
-    position: fixed;
+    position: absolute;
     bottom: 240px;
     right: 40px;
     display: flex;
