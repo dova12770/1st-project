@@ -9,7 +9,7 @@
     margin: auto;
     margin-top: 50px;
     width: 85%;
-    height: 1000px;
+    height: 700px;
     background-color: white;
     display: flex;
     flex-direction: column;
@@ -49,6 +49,9 @@
     top: 240px;
     left: 10px;
 }
+.leftButton:hover {
+    color: lightcoral;
+}
 .rightButton {   /* 상품사진 다음 사진으로 이동 */
     cursor: pointer;
     background:none;
@@ -60,6 +63,9 @@
     height: 30px;
     top: 240px;
     right: 10px;
+}
+.rightButton:hover {
+    color: lightcoral;
 }
 
 .introRight {    /* 사진오른쪽에 현황정보 박스 */
@@ -116,4 +122,7 @@
     border-radius: 10px;
     text-align: center;
     align-items: center;
+}
+.jumunBtn:hover {
+    color: lightcoral;
 }

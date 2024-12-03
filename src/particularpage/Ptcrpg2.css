@@ -1,0 +1,108 @@
+* {
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container2 {    /* 정보표시컨테이너 박스 */
+    margin-top: 0px;
+    margin-bottom: 50px;
+    width: 100%;
+    height: 3000px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ptcrNav {                /* 상품설명 맨위에 네비게이션바 */
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 100; /* 다른 요소 위에 렌더링되도록 설정 */
+    height: 60px;
+    background-color: white;
+    border-top: 1px solid rgb(200, 200, 200);
+    border-bottom: 1px solid rgb(200, 200, 200);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* 테두리 그림자 */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.ptcrNav div {
+    cursor: pointer;
+    margin: 0px -40px 0px 80px;
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(75, 75, 75);
+}
+.ptcrNav div:hover {
+    color: lightcoral;
+}
+
+.expn {           /* 상품설명박스 */
+    height: 100%;
+    width: 85%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.expnLeft {      /* 상품설명박스 왼쪽(사진및글) */
+    background-color: white;
+    margin: 10px;
+    margin-top: 50px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.expnTitle {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.expnBody {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.expnRight {     /* 상품설명박스 오른쪽(사이드바) */
+    background-color: white;
+    height: 1200px;
+    width: 45%;
+    position: sticky;
+    top: 80px;
+    padding: 30px;
+    margin: 10px 10px 10px 100px;
+    border: 1px solid rgb(200, 200, 200);
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.innerExpnRight {    /* 사이드바 안에 가격옵션 박스 */
+    height: 20%;
+    width: 100%;
+    border: 1px solid rgb(200, 200, 200);
+    border-radius: 20px;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 3px 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 11px;
+    font-weight: bold;
+    color: rgb(100, 100, 100);
+    cursor: pointer;
+}
+.innerExpnRight:hover {
+    border: 1px solid black;
+}
+.pakagePrice {
+    color: black;
+    font-size: 25px;
+    font-weight: bold;
+}
