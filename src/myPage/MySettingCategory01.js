@@ -1,7 +1,6 @@
-
 import React from 'react';
 
-function MyPageCategory({ name, index, selectedIndex, setSelectedIndex }) {
+function MySettingCategory01({ name, index, selectedIndex, setSelectedIndex }) {
     const isSelected = selectedIndex === index;
     return (
         <li 
@@ -17,4 +16,4 @@ function MyPageCategory({ name, index, selectedIndex, setSelectedIndex }) {
     );
 }
 
-export default MyPageCategory;
+export default MySettingCategory01;
