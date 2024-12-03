@@ -14,7 +14,7 @@ function Header() {
         <div>
             <div className='headerContainer'>
                 <div className='PrTitle'>
-                    <h1>Prism</h1>
+                    <span className='Prism'>Prism</span>
                 </div>
                 <div className='logoRight'>
                     <div className='bell'><CgBell />알림</div>

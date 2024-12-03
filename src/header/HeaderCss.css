@@ -13,6 +13,11 @@
     justify-content: space-between;
 }
 
+.Prism {
+    font-size: 50px;
+    font-weight: bold;
+    cursor: pointer;
+}
 .PrTitle {
     width: 65%;
     display: flex;
@@ -31,6 +36,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .login_btn {
@@ -39,6 +45,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .Menubar {
@@ -57,11 +64,15 @@ li {
     margin-top: 10px;
     font-size: 20px;
     margin-left: 4rm;
-    padding-left: 10px;
+    padding: 10px;
+    font-weight: bold;
+    cursor: pointer;
 }
 
 .hoverName:hover {
-    color: green;
+    color: #F08080;
+    transform: scale(1.1);
+    transition: 0.5s;
 }
 
 .category {
@@ -70,5 +81,5 @@ li {
 }
 
 .caList:hover {
-    color: green;
+    color: #F08080;
 }
