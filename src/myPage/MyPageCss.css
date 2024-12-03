@@ -39,27 +39,37 @@
 .Prof_button{
     padding: 10px;
     width: 150px;
-    border: 1px solid green;
+    border: 1px solid #40A578;
     display: flex;
     justify-content: center;
     align-self: center;
 }
 
+.MyCategory{
+    text-align: 'center'
+}
 ul {
     display: flex;
     list-style: none;
+    text-align: 'center'
 }
 
 li {
     margin-top: 10px;
     font-size: 20px;
-    margin-left: 6rm;
-    padding-left: 10px;
+    margin: 6rm;
+    padding: 10px;
+    cursor: pointer;
+    text-align: 'center';
 }
 
-.GreenLine {
-    border-bottom: 2px solid green ;
+.MyPage_Content { 
+    width:auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    margin-top: 20px; 
+    font-size: 20px; 
+    color: grey;
 }
-/* li: {
-    border-bottom: 2px solid green ;
-} */
