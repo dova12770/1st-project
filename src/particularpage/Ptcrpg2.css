@@ -19,8 +19,8 @@
 .ptcrNav {                /* 상품설명 맨위에 네비게이션바 */
     width: 100%;
     position: sticky;
-    top: 0;
-    z-index: 100; /* 다른 요소 위에 렌더링되도록 설정 */
+    top: 0px;
+    z-index: 10; /* 다른 요소 위에 렌더링되도록 설정 */
     height: 60px;
     background-color: white;
     border-top: 1px solid rgb(200, 200, 200);

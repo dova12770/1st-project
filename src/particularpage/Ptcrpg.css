@@ -42,6 +42,7 @@
     height: 500px;
     display: flex;
     position: relative;
+    z-index: 0;
 }
 .leftButton {    /* 상품사진 전 사진으로 이동 */
     cursor: pointer;

@@ -7,6 +7,7 @@ import ReviewPage from './particularpage/pages/ReviewPage';
 import Footer from "./footer/Footer";
 import TopDown from "./topdown/TopDown";
 import Merge from './merge/Merge';
+import Header from "./header/Header";
 
   
 

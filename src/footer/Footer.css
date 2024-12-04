@@ -160,14 +160,14 @@
     border-radius: 10px;
     height: 100px;
     width: 80px;
-    position: absolute;
-    bottom: 240px;
-    right: 40px;
+    position: relative;
+    bottom: 452px;
+    left: 1133px;
     display: flex;
     flex-direction: column;
     padding: 10px;
     padding-bottom: 2px;
-
+    line-height: 25px;
 }
 .ft_modal h5 {
     cursor: pointer;
