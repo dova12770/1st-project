@@ -1,6 +1,19 @@
 
+.bodyFrame{
+    flex-direction: row;
+    position: relative;
+}
 
 .bodyaside{
+    width: 600px;
+    position: absolute;
     display: flex;
     flex-direction: row;
+}
+.chat{
+    width: 250px;
+    position: fixed;
+    display: flex;
+    right: 0px;
+    z-index: 1;
 }

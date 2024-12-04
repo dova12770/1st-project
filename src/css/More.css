@@ -4,10 +4,16 @@
     padding: 0px;
 }
 
+.moreMain{
+    width: 50px;
+}
+
 .texttitle{
-    margin-left: 20px;
+    margin-top: 20px;
+    margin-left: 15px;
     padding: 0px;
     height: 50px;
+    color:  #F08080;
 }
 
 .cardcontainer{
@@ -19,25 +25,23 @@
     height: 650px;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    
 }
 
 .maincard{
     margin: 0px;
     padding: 0px;
-    width: 100%;
+    width: 150px;
     display: flex;
     flex-direction: column;
     cursor: pointer;
     overflow: hidden;
-    
+    border-radius: 10px; 
 }
 
 .moreimg{
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     align-items:center; 
-    border-radius: 10px; 
 }
 
 .moreimg:hover{
@@ -49,3 +53,11 @@
 .morediv{
     width: 95%;
 }
+.subtitle{
+    width: 150px;
+    text-overflow: clip;
+}
+.linkpointer{
+    cursor: pointer;
+}
+

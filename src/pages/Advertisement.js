@@ -1,11 +1,11 @@
-import Carosel from "../components/Carosel";
+import Slide from "../components/Slide";
 
 
 function Advertisement(){
 
     return(
         <div>
-            <Carosel/>
+            <Slide/>
         </div>
     )
 }

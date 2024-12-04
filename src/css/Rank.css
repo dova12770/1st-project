@@ -2,17 +2,20 @@
 *{
     margin: 0px;
     padding: 0px;
+    z-index: 0;
 }
 
 .numBer{
+    width: 30px;
     display: flex;
     flex-direction: row;
 }
 
 .toprank{
     margin: 20px;
-    width:300px;
+    width: 250px;
     height: 100px;
+    cursor: pointer;
 }
 
 .topimg{
@@ -26,4 +29,23 @@
     transform: scale(1.05);
     transition: 0.7s;
     
+}
+.ranknum{
+    margin-left: 5px;
+    width: 13px;
+    color:  #F08080;
+}
+
+.topranktitle{
+    width: 250px;
+    height: 100px;
+    text-align: center;
+    color:  #F08080;
+}
+
+.toprankfooter{
+    width: 250px;
+    height: 100px;
+    text-align: center;
+    cursor: pointer;
 }
