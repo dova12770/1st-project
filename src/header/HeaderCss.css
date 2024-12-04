@@ -50,7 +50,8 @@
 }
 
 .Menubar {
-    position: fixed;
+    position: sticky;
+    top: 0;
     margin: auto;
     padding-left: 5px;
     width: 100%;
