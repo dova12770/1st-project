@@ -58,13 +58,62 @@
     flex-direction: column;
 }
 .expnTitle {
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 600;
     margin-bottom: 30px;
 }
 .expnBody {
     margin-top: 30px;
     margin-bottom: 20px;
+}
+.noticeText1 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-top: 1px solid rgb(200, 200, 200);
+    border-bottom: 1px solid rgb(200, 200, 200);
+    margin-top: 200px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.650);
+    line-height: 30px;
+}
+.noticeText2 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid rgb(200, 200, 200);
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.650);
+    line-height: 25px;
+}
+.noticeText2 .noticeSubTitle{
+    font-size: 17px;
+    color: rgba(0, 0, 0, 0.918);
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+.noticeTitle {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    color: black;
+}
+.noticeSubTitle {
+    font-size: 17px;
+    color: rgba(0, 0, 0, 0.918);
+    padding-bottom: 10px;
+}
+.noticeSubTitle2 {
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.8);
+    padding-top: 15px;
 }
 
 .expnRight {     /* 상품설명박스 오른쪽(사이드바) */
