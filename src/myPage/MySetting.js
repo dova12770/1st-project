@@ -5,6 +5,9 @@ import MySettingCategory01 from "./MySettingCategory01";
 import MySettingCategory02 from "./MySettingCategory02";
 import DeliveryAddress from "./DeliveryAddress";
 import profDate from '../data/profDate';
+import Alarm from "./Alarm";
+import Pay from "./Pay";
+import Account from "./Account";
 
 function MySetting() {
 
@@ -20,13 +23,13 @@ function MySetting() {
                     prof={prof} clickButton={clickButton} setClickButton={setClickButton}
                     />;
             case 1:
-                return <p />;
+                return <Account/>;
             case 2:
-                return
+                return <Pay/>;
             case 3:
-                return <DeliveryAddress/>
+                return <DeliveryAddress/>;
             case 4:
-                return 
+                return <Alarm/>;
             default:
                 return <div>카테고리를 선택해주세요</div>;
         }
