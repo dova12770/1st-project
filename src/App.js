@@ -4,6 +4,7 @@ import PlanPage from './pages/PlanPage';
 import UpdatePage from './pages/UpdatePage';
 import CommuPage from './pages/CommuPage';
 import ReviewPage from './pages/ReviewPage';
+import Footer from "./footer/Footer";
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
           <Route path='/reviewpage' element={<ReviewPage />} />
         </Routes>
       </Router>
+      <Footer />
     </div>
   )
 }
