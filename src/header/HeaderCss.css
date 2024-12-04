@@ -63,8 +63,6 @@
 ul {
     display: flex;
     list-style: none;
-    position: sticky;
-    top: 0px;
     z-index: 100;
 }
 
