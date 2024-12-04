@@ -11,7 +11,7 @@ import { LiaStoreAltSolid } from "react-icons/lia";
 function Category() {
 
     return (
-        <div>
+        <div className='dropdown_menu'>
             <li className='caList'><CgMicrosoft /> 전체</li>
             <li className='caList'><IoFastFoodOutline /> 푸드</li>
             <li className='caList'><CgNotes /> 출판</li>
