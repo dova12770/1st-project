@@ -11,7 +11,7 @@ function Header() {
     const [menuOn,setMenuOn] = useState(false);
 
     return (
-        <div>
+        <div className = 'HContainer'>
             <div className='headerContainer'>
                 <div className='PrTitle'>
                     <span className='Prism'>Prism</span>

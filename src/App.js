@@ -5,10 +5,12 @@ import UpdatePage from "./particularpage/pages/UpdatePage";
 import CommuPage from './particularpage/pages/CommuPage';
 import ReviewPage from './particularpage/pages/ReviewPage';
 import Footer from "./footer/Footer";
-import TopDown from './topdown/TopDown';
-import Header from './header/Header';
+import TopDown from "./topdown/TopDown";
+import Merge from './merge/Merge';
 
+  
 
+  //return <Merge/>;
 function App() {
   return (
     <div>
