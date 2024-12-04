@@ -35,13 +35,11 @@
     margin: 0px -40px 0px 80px;
     font-size: 14px;
     font-weight: 600;
-}
-.linkFont:hover {
-    color: lightcoral;
-}
-.linkFont {
     color: rgb(75, 75, 75);
     text-decoration: none;
+}
+.ptcrNav div:hover {
+    color: lightcoral;
 }
 
 .expn {           /* 상품설명박스 */
