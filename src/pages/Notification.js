@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { LuAlarmCheck } from "react-icons/lu";
 import '../css/Notification.css';
 import NotificationData from '../data/NotificationData';
 import NotificationComponent from '../components/NotificationComponent';
@@ -25,7 +24,7 @@ function Notification(){
 
             <div className='icon' onClick={()=>{
                 setIsOpen(!isOpen);
-            }}> <LuAlarmCheck /> </div> 
+            }}> 💡 </div> 
 
             {/* 알림창 */}
             {   isOpen && (
