@@ -5,11 +5,17 @@
     box-sizing: border-box;
 }
 
+.outerContainer {
+    margin: auto;
+    height: 750px;
+    width: 97vw;
+}
+
 .container {    /* 정보표시컨테이너 박스 */
     margin: auto;
     margin-top: 50px;
-    width: 85%;
-    height: 100vh;
+    width: 100%;
+
     background-color: white;
     display: flex;
     flex-direction: column;

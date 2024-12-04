@@ -9,7 +9,7 @@ import { IoIosArrowDropright } from "react-icons/io";
 
 function PtcrpgCom(props){
     return(
-        <>
+        <div className="outerContainer">
             <div className='container'>
                 <div className='mainTitle'>
                     <h1>{props.ppTitle}</h1>
@@ -71,7 +71,7 @@ function PtcrpgCom(props){
                     </div>
                 </div>
             </div>
-        </>
+        </div>
     )
 }
 
