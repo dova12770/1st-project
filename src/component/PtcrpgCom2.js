@@ -1,16 +1,22 @@
+import React from "react";
+import { useNavigate, useParams } from "react-router-dom";
 import '../particularpage/Ptcrpg2.css';
 import { CgShapeTriangle } from "react-icons/cg";
 import PtcrpgExpnRightCom from './PtcrpgExpnRightCom';
 
+
 function PtcrpgCom2(props) {
+
+    const navigate = useNavigate();
+
     return (
         <>
             <div className='container2'>
                 <div className='ptcrNav'>  {/* 네비바 */}
-                    <div>프로젝트 계획</div>
-                    <div>업데이트</div>
-                    <div>커뮤니티</div>
-                    <div>후기</div>
+                    <div onClick={()=> navigate('/planpage')}>프로젝트 계획</div>
+                    <div onClick={()=> navigate('/updatepage')}>업데이트</div>
+                    <div onClick={()=> navigate('/commupage')}>커뮤니티</div>
+                    <div onClick={()=> navigate('/reviewpage')}>후기</div>
                 </div>
                 <div className='expn'>  {/* 상품설명창 */}
                     <div className='expnLeft'>  {/* 이미지및상품소개 박스 */}

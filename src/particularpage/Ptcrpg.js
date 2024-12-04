@@ -23,14 +23,14 @@ function Ptcrpg() {
     const [goDelivery, setGoDelivery] = useState(['2024.12.20']); // 예상 발송 시작일
 
     const [userPrice, setUserPrice] = useState(['10,000','20,000','30,000','40,000','50,000']);  // 상품설명오른쪽에 상세옵션 선택창 가격배열
-    const [userPriceText, setUserPriceText] = useState(['만원짜리 패키지', '이만원짜리 패키지', '삼만원짜리 패키지', '사만원짜리 패키지', '오만원짜리 패키지']);
+    const [userPriceText, setUserPriceText] = useState(['만원 패키지', '이만원 패키지', '삼만원 패키지', '사만원 패키지', '오만원 패키지']);
    
 
 
 
     const toggleLike = () => {
         setLiked(!liked);
-        setLikeCnt(liked ? likeCnt - 1 : likeCnt + 1); // 좋아요 상태에 따라 카운트 증가/감소 
+        setLikeCnt(liked ? likeCnt - 1 : likeCnt + 1); // 좋아요 상태에 따라 카운트 증가/감소
     };
 
     useEffect(() => { localStorage.setItem('likeCnt', likeCnt); }, [likeCnt]);
