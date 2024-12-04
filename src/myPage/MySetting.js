@@ -8,6 +8,7 @@ import profDate from '../data/profDate';
 import Alarm from "./Alarm";
 import Pay from "./Pay";
 import Account from "./Account";
+import accountDate from "../data/AccountDate";
 
 function MySetting() {
 
@@ -15,7 +16,8 @@ function MySetting() {
     const [selectedIndex, setSelectedIndex] = useState(0); // 기본적으로 프로필 선택
     const [clickButton, setClickButton] = useState(false);
     const [prof, setProf] = useState(profDate);
-
+    const [acc, setAcc] = useState(accountDate);
+    
     const renderContent = () => {
         switch (selectedIndex) {
             case 0:
@@ -23,7 +25,7 @@ function MySetting() {
                     prof={prof} clickButton={clickButton} setClickButton={setClickButton}
                     />;
             case 1:
-                return <Account/>;
+                return <Account acc={acc}/>;
             case 2:
                 return <Pay/>;
             case 3:

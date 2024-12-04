@@ -6,3 +6,5 @@ let accountDate = [
         tel:'010-1234-5678'
     }
     ]
+
+export default accountDate;

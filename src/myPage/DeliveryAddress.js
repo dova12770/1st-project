@@ -11,11 +11,11 @@ function DeliveryAddress() {
 
                 }}>+추가</div>
             </div>
-            <div className='iconAlert prof'><TbAlertSquare /></div>
-            <div className="prof">
+            <div className='iconAlert profAlter'><TbAlertSquare /></div>
+            <div className="profAlter">
                 등록된 배송지가 없습니다.
             </div>
-            <div className="prof">
+            <div className="profAlter">
                 배송지를 추가하여주세요.
             </div>
         </div>

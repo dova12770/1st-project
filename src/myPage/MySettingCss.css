@@ -27,14 +27,24 @@
     padding-bottom: 20px;
     border-bottom: solid gray;
 }
-
+.profBoxFirst {
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+}
 .prof {
     font-weight: bolder;
     display: flex;
-    justify-content: space-around;
-    align-items: baseline;
+    justify-content: baseline /*space-around*/;
+    align-items: flex-start;
 }
-
+.profAlter {
+    padding-top: 5px;
+    font-weight: bolder;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
 .title {
     font-size: 40px;
     font-weight: bold;
@@ -94,5 +104,5 @@
 
 .iconAlert {
     font-size: 50px;
-    
+
 }

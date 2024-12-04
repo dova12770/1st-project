@@ -1,5 +1,6 @@
 import './MySettingCss.css'
 
+
 function MySettingCategory02({ prof }) {
 
     return (
@@ -10,18 +11,24 @@ function MySettingCategory02({ prof }) {
                 }}>변경</button>
             </div>
             <div className='profBox'>
+                <div>
                 <p className="prof">이름</p>
-                <span>{prof.name}</span>
+                <div>{prof[0].name}</div>
+                </div>
                 <button className="my_btn" >변경</button>
             </div>
             <div className='profBox'>
+                <div>
                 <p className="prof">사용자이름(url)</p>
-                <span>{prof.url}</span>
+                <span>{prof[0].url}</span>
+                </div>
                 <button className="my_btn" >변경</button>
             </div>
             <div className='profBox'>
+                <div className='proBoxFirst'>
                 <p className="prof">소개</p>
-                <span>{prof.introduction}</span>
+                <span>{prof[0].introduction}</span>
+                </div>
                 <button className="my_btn" >변경</button>
             </div>
             <div className='profBox'>
