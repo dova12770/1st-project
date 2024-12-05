@@ -1,5 +1,5 @@
 import { useNavigate, useParams } from "react-router-dom";
-import PtcrpgCom from "../../component/PtcrpgCom";
+import PtcrpgComTop from "../../component/PtcrpgComTop";
 import React, { useState } from "react";
 
 
@@ -14,7 +14,7 @@ function UpdatePage() {
                 <div onClick={() => navigate('/commupage')}>커뮤니티</div>
                 <div onClick={() => navigate('/reviewpage')}>후기</div>
             </div>
-            <h1 style={{ textAlign: 'center' }}>업데이트 내역이 없습니다.</h1>
+            <h1 style={{ textAlign: 'center', marginTop:'50px' }}>업데이트 내역이 없습니다.</h1>
         </>
     )
 }

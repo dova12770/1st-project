@@ -7,7 +7,8 @@ import { IoIosArrowDropleft } from "react-icons/io";
 import { IoIosArrowDropright } from "react-icons/io";
 
 
-function PtcrpgCom(props){
+function PtcrpgComTop(props){
+
     return(
         <div className="outerContainer">
             <div className='container'>
@@ -16,14 +17,16 @@ function PtcrpgCom(props){
                 </div>
                 <div className='intro'>
                     <div className='introLeft'>
-                        <img src={props.images[props.cntImg - 1]} style={{ width: '100%', height: '100%' }} />
+                        <img src={props.datasDT[0].imagesDT[props.cntImg]} style={{ width: '100%', height: '100%' }} />
                         <div className='leftButton' onClick={() => {  // 이전사진
-                            if (props.cntImg > 1) {
+                            if (props.cntImg > 0) {
                                 props.setCntImg(props.cntImg - 1);
                             }
                         }}><IoIosArrowDropleft style={{ background: 'none' }} /></div>
                         <div className='rightButton' onClick={() => {  // 다음사진
-                            if (props.cntImg < props.images.length) {
+                            if (props.cntImg+1 < props.datasDT[0].imagesDT.length) {
+
+                                //image 0 1 2  < 3
                                 props.setCntImg(props.cntImg + 1);
                             }
                         }}><IoIosArrowDropright style={{ background: 'none' }} /></div>
@@ -32,17 +35,17 @@ function PtcrpgCom(props){
                         <div className='introRight1'>
                             <div>
                                 <div><p style={{ fontSize: '10px' }}>모인금액</p></div>
-                                <div><p style={{ fontSize: '25px' }}>{props.converge}<span style={{ fontSize: '10px' }}> 원</span><span style={{ fontSize: '15px' }}> {props.cvgPercent}%</span></p></div>
+                                <div><p style={{ fontSize: '25px' }}>{props.datasDT[0].convergeAmountDT}<span style={{ fontSize: '10px' }}> 원</span><span style={{ fontSize: '15px' }}> {props.datasDT[0].cvgPercentDT}%</span></p></div>
                             </div>
                             <br></br>
                             <div>
                                 <div><p style={{ fontSize: '10px' }}>남은시간</p></div>
-                                <div><p style={{ fontSize: '25px' }}>{props.remaindeTime}<span style={{ fontSize: '10px' }}> 일</span></p></div>
+                                <div><p style={{ fontSize: '25px' }}>{props.datasDT[0].remainDateDT}<span style={{ fontSize: '10px' }}> 일</span></p></div>
                             </div>
                             <br></br>
                             <div>
                                 <div><p style={{ fontSize: '10px' }}>후원자</p></div>
-                                <div><p style={{ fontSize: '25px' }}>{props.sponser}<span style={{ fontSize: '10px' }}> 명</span></p></div>
+                                <div><p style={{ fontSize: '25px' }}>{props.datasDT[0].sponserCountDT}<span style={{ fontSize: '10px' }}> 명</span></p></div>
                             </div>
                         </div>
                         <div className='introRight2'>
@@ -54,10 +57,10 @@ function PtcrpgCom(props){
                                     <p>예상 발송 시작일</p>
                                 </div>
                                 <div>
-                                    <p>{props.targetAmount}원</p>
-                                    <p>{props.fundDate1}일 ~ {props.fundDate2}일</p>
-                                    <p>목표금액 달성시 {props.payday}에 결제 진행</p>
-                                    <p>{props.goDelivery}</p>
+                                    <p>{props.datasDT[0].targetAmountDT}원</p>
+                                    <p>{props.datasDT[0].fundDate1DT}일 ~ {props.datasDT[0].fundDate2DT}일</p>
+                                    <p>목표금액 달성시 {props.datasDT[0].paydayDT}에 결제 진행</p>
+                                    <p>{props.datasDT[0].goDeliveryDT}</p>
                                 </div>
                             </div>
                             <div className='introRight2Bottom'>
@@ -76,4 +79,4 @@ function PtcrpgCom(props){
 }
 
 
-export default PtcrpgCom;
+export default PtcrpgComTop;
