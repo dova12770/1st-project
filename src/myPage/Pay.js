@@ -1,8 +1,7 @@
-
-import './MySettingCss.css';
+import '../css/MySettingCss.css';
 import { TbAlertSquare } from "react-icons/tb";
 import { useState } from 'react';
-import AddPay from '../components/AddPay'; 
+import AddPay from '../components/Addpay';
 
 function Pay() {
     const [openModal, setOpenModal] = useState(false);
@@ -22,6 +21,10 @@ function Pay() {
         }
         modalClose();
     };
+    const handleDelete = (index) => {
+        const updatedList = payInfoList.filter((_, i) => i !== index);
+        setPayInfoList(updatedList);
+    };
 
     return (
         <div className="profContainer">
@@ -40,13 +43,21 @@ function Pay() {
                     </div>
                 </>
             ) : (
-                <div className="profAlter">
-                    <ul>
-                        {payInfoList.map((info, index) => (
-                            <li key={index}>결제수단 {index + 1}: {info}</li>
-                        ))}
-                    </ul>
-                </div>
+
+                <ul className="payInfoList">
+                    {payInfoList.map((info, index) => (
+                        <li key={index} className="payInfoItem">
+                            결제수단 {index+1}번<br/>
+                            카드번호: {info}
+                            <button
+                                className="deleteButton"
+                                onClick={() => handleDelete(index)}
+                            >
+                                X
+                            </button>
+                        </li>
+                    ))}
+                </ul>
             )}
             <AddPay open={openModal} close={modalClose} save={handleSave} />
         </div>

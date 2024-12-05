@@ -44,10 +44,59 @@
 }
 
 .modalButtons button:first-child {
-    background: #ccc;
+    background: #868585;
 }
 
 .modalButtons button:last-child {
-    background: #f44;
+    background: #f08080;
     color: white;
+}
+
+
+.payInfoList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    flex-direction: column;
+}
+
+.payInfoList li {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #f9f9f9;
+    font-size: 16px;
+}
+.payInfoList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.payInfoItem {
+    display: flex;
+    justify-content: space-between; /* 항목과 삭제 버튼 간 간격 유지 */
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+    font-size: 16px;
+}
+
+.deleteButton {
+    background-color: #f08080; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.deleteButton:hover {
+    background-color: #da7474; 
 }

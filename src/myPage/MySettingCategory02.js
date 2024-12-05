@@ -1,4 +1,4 @@
-import './MySettingCss.css'
+import '../css/MySettingCss.css';
 
 
 function MySettingCategory02({ prof }) {

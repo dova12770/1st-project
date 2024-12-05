@@ -1,6 +1,6 @@
 
-import './MyPageCss.css'
-import userImg from '../image/userImg.png'
+import '../css/MyPageCss.css';
+import userImg from '../image/userImg.png';
 import { GoGear } from "react-icons/go";
 import { useState } from 'react';
 import MyPageCategory from './MyPageCategory';

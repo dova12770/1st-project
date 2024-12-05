@@ -1,21 +1,19 @@
 import React, { useState, useEffect } from 'react';
 import '../css/Modal.css'; 
 
-function AddPay({ open, close, save }) {
+function AddDeliveryAddress({ open, close, save }) {
     const [cardInfo, setCardInfo] = useState({
-        number: '',
-        expiration: '',
         owner: '',
-        cvc: ''
+        address: '',
+        tel: ''
     });
 
     useEffect(() => {
         if (open) {
             setCardInfo({
-                number: '',
-                expiration: '',
                 owner: '',
-                cvc: ''
+                address: '',
+                tel: ''
             });
         }
     }, [open]);
@@ -26,17 +24,12 @@ function AddPay({ open, close, save }) {
         const { name, value } = e.target;
 
         let filteredValue = value;
-        if (name === "number") {
-            filteredValue = value.replace(/\D/g, ''); 
-            if (filteredValue.length > 16) filteredValue = filteredValue.slice(0, 16); 
-        } else if (name === "expiration") {
-            filteredValue = value.replace(/\D/g, ''); 
-            if (filteredValue.length > 4) filteredValue = filteredValue.slice(0, 4); 
-        } else if (name === "owner") {
+        if (name === "owner") {
             filteredValue = value.replace(/[^a-zA-Zㄱ-힣\s]/g, ''); 
-        } else if (name === "cvc") {
-            filteredValue = value.replace(/\D/g, ''); 
-            if (filteredValue.length > 3) filteredValue = filteredValue.slice(0, 3); 
+        } else if (name === "adress") {
+            filteredValue = value.replace(/[^a-zA-Zㄱ-힣\s]/g, ''); 
+        } else if (name === "tel") {
+            filteredValue = value.replace(/\D/g, '')
         }
 
         setCardInfo({ ...cardInfo, [name]: filteredValue });
@@ -114,5 +107,4 @@ function AddPay({ open, close, save }) {
     );
 }
 
-export default AddPay;
-
+export default AddDeliveryAddress;

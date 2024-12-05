@@ -1,4 +1,4 @@
-import './MySettingCss.css'
+import '../css/MySettingCss.css';
 import { TbAlertSquare } from "react-icons/tb";
 
 function DeliveryAddress() {

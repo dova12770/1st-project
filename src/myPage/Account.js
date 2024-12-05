@@ -1,4 +1,4 @@
-import './MySettingCss.css'
+import '../css/MySettingCss.css';
 
 function Account({acc}){
     console.log(acc);

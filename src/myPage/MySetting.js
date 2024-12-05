@@ -1,6 +1,6 @@
 
 import { useState } from "react";
-import './MySettingCss.css';
+import '../css/MySettingCss.css';
 import MySettingCategory01 from "./MySettingCategory01";
 import MySettingCategory02 from "./MySettingCategory02";
 import DeliveryAddress from "./DeliveryAddress";
