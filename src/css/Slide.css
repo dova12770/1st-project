@@ -1,0 +1,43 @@
+.imgconfig {
+    width: 700px;
+    height: 300px;
+    position: relative;
+}
+
+.view {
+    width: 700px;
+    height: 300px;
+    display: inline-flex;
+    overflow: hidden;
+}
+
+.slide-index {
+    position: absolute;
+    display: flex;
+    gap: 20px;
+    margin-top: 300px;
+    cursor: pointer;
+    list-style: none;
+    margin-left: 270px;
+}
+
+.index-item.active {
+    color: blue;
+}
+
+.slide {
+    display: flex;
+    margin: 0 auto;
+}
+
+.prev-button {
+    background-color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.next-button {
+    background-color: white;
+    border: none;
+    cursor: pointer;
+}
