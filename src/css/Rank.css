@@ -2,7 +2,10 @@
 *{
     margin: 0px;
     padding: 0px;
-    z-index: 0;
+}
+
+.toprankTotal{
+    float : right;
 }
 
 .numBer{

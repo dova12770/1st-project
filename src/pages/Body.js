@@ -1,4 +1,3 @@
-import Advertisement from "./Advertisement";
 import Rank from "./Rank";
 import More from "./More";
 import Slide from "../components/Slide";
@@ -9,13 +8,14 @@ import '../css/Body.css';
 function Body() {
 
     return (
-        <div className="bodyFrame"><div className="chat"><SideChat/></div>
+        <div className="bodyFrame">
             <div className="bodyaside">
                 <div><Slide/><More/></div>
                 <Rank/>
                 </div>
             </div>
+            // <div className="chat"><SideChat/></div> 임시 차단
             );
 }
 
-            export default Body;
+    export default Body;

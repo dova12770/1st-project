@@ -73,7 +73,6 @@ function Footer() {
             {
                 modalFlag == true ? ( <div ref={modalRef}> <FooterModal setModalFlag={setModalFlag} modalFlag={modalFlag} /> </div> ) : null
             }
-
         </>
     )
 

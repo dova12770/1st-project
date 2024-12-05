@@ -1,11 +1,11 @@
 .imgconfig {
-    width: 700px;
+    width: 800px;
     height: 300px;
     position: relative;
 }
 
 .view {
-    width: 700px;
+    width: 800px;
     height: 300px;
     display: inline-flex;
     overflow: hidden;
@@ -18,7 +18,7 @@
     margin-top: 300px;
     cursor: pointer;
     list-style: none;
-    margin-left: 270px;
+    margin-left: 220px;
 }
 
 .index-item.active {
@@ -31,12 +31,14 @@
 }
 
 .prev-button {
+    width: 50px;
     background-color: white;
     border: none;
     cursor: pointer;
 }
 
 .next-button {
+    width: 50px;
     background-color: white;
     border: none;
     cursor: pointer;
