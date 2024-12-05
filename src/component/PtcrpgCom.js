@@ -32,7 +32,7 @@ function PtcrpgCom(props){
                         <div className='introRight1'>
                             <div>
                                 <div><p style={{ fontSize: '10px' }}>모인금액</p></div>
-                                <div><p style={{ fontSize: '25px' }}>{props.converge}<span style={{ fontSize: '10px' }}> 원</span><span style={{ fontSize: '15px' }}> {props.cvgPersent}%</span></p></div>
+                                <div><p style={{ fontSize: '25px' }}>{props.converge}<span style={{ fontSize: '10px' }}> 원</span><span style={{ fontSize: '15px' }}> {props.cvgPercent}%</span></p></div>
                             </div>
                             <br></br>
                             <div>

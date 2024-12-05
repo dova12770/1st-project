@@ -13,7 +13,7 @@ function Ptcrpg() {
     const [liked, setLiked] = useState(getMainTainLiked); //하트 색상 변경
     const [ppTitle, setPpTitle] = useState(['딸기콩포트']); // 상세페이지 최상단 제목
     const [converge, setConverge] = useState([100]);     // 모인금액
-    const [cvgPersent, setCvgPersent] = useState([50]);  // 모인금액 퍼센트 -------------- 모인금액 / 목표금액 계산해야함
+    const [cvgPercent, setCvgPercent] = useState([50]);  // 모인금액 퍼센트 -------------- 모인금액 / 목표금액 계산해야함
     const [remaindeTime, setRemaindeTime] = useState([24]);  // 남은시간 (일 기준)
     const [sponser, setSponser] = useState([1]);              // 후원자 명수
     const [targetAmount, setTargetAmount] = useState([200]);   // 목표금액
@@ -24,7 +24,7 @@ function Ptcrpg() {
 
     const [userPrice, setUserPrice] = useState(['10,000','20,000','30,000','40,000','50,000']);  // 상품설명오른쪽에 상세옵션 선택창 가격배열
     const [userPriceText, setUserPriceText] = useState(['만원 패키지', '이만원 패키지', '삼만원 패키지', '사만원 패키지', '오만원 패키지']);
-   
+
 
 
 
@@ -60,7 +60,7 @@ function Ptcrpg() {
                 liked={liked} setLiked={setLiked}
                 ppTitle={ppTitle} setPpTitle={setPpTitle}
                 converge={converge} setConverge={setConverge}
-                cvgPersent={cvgPersent} setCvgPersent={setCvgPersent}
+                cvgPercent={cvgPercent} setCvgPercent={setCvgPercent}
                 remaindeTime={remaindeTime} setRemaindeTime={setRemaindeTime}
                 sponser={sponser} setSponser={setSponser}
                 targetAmount={targetAmount} setTargetAmount={setTargetAmount}
