@@ -10,6 +10,7 @@ import Merge from './merge/Merge';
 import Header from "./header/Header";
 import MainPtcrpg from "./particularpage/MainPtcrpg";
 import MainFooter from "./footer/MainFooter";
+import PtcrTotal from "./merge/PtcrTotal";
 
   
 
@@ -17,10 +18,7 @@ import MainFooter from "./footer/MainFooter";
 function App() {
   return (
     <div>
-      <Header />
-      <MainPtcrpg />
-      <TopDown />
-      <MainFooter />
+      <PtcrTotal/>
     </div>
   )
 }

@@ -7,6 +7,8 @@ import PtcrpgExpnRightCom from './PtcrpgExpnRightCom';
 
 function PtcrpgComBottom(props) {
 
+
+
     const navigate = useNavigate();
 
     return (
@@ -21,11 +23,11 @@ function PtcrpgComBottom(props) {
                 <div className='expn'>  {/* 상품설명창 */}
                     <div className='expnLeft'>  {/* 이미지및상품소개 박스 */}
                         <div className='expnTitle'><CgShapeTriangle style={{ fontSize: '18px' }} />프로젝트 소개</div>
-                        <div className='expnBody'><img src={props.datasDT[0].userImagesDT[0]} width={630} /></div> {/* 가로사이즈 최대 630 */}
+                        <div className='expnBody'><img src={props.data[0].userImagesDT[0]} width={630} /></div> {/* 가로사이즈 최대 630 */}
                         <div className='expnBody'>이미지및상품소개</div>
-                        <div className='expnBody'><img src={props.datasDT[0].userImagesDT[0]} width={630} /></div>
+                        <div className='expnBody'><img src={props.data[0].userImagesDT[1]} width={630} /></div>
                         <div className='expnBody'>이미지및상품소개</div>
-                        <div className='expnBody'><img src={props.datasDT[0].userImagesDT[0]} width={630} /></div>
+                        <div className='expnBody'><img src={props.data[0].userImagesDT[2]} width={630} /></div>
 
                         <div className='noticeText1'>
                             <div className='noticeTitle'><CgShapeTriangle style={{ fontSize: '18px' }} />신뢰와 안전</div>
@@ -55,8 +57,7 @@ function PtcrpgComBottom(props) {
                     </div>
                     <div className='expnRight'>  {/* 상품 상세옵션 선택 박스 map반복 */}
                         {
-                            props.datasDT[0].userPriceDT.map((item, index) => {
-
+                            props.data[0].userPriceDT.map((item, index) => { // ptcrpg에서 아이디값변경시 상세옵션선택창 안바뀜 수정@@@@@@@@@@@@@@@@@@@@@@@@
                                 return (
                                     <PtcrpgExpnRightCom item={item} index={index} datasDT={props.datasDT} />
                                 )

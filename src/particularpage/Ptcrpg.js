@@ -7,6 +7,8 @@ function Ptcrpg() {
 
     const [datasDT, setDatasDT] = useState(Datas);
 
+    const data = datasDT.filter(data => data.idDT === '003');
+
     const getMainTainLikeCnt = () => Number(localStorage.getItem('likeCnt')) || 0;  // 좋아요버튼 공유버튼 새로고침해도 유지 시작
     const getMainTainShareCnt = () => Number(localStorage.getItem('shareCnt')) || 0;
     const getMainTainLiked = () => localStorage.getItem('liked') === 'true' || false;
@@ -40,9 +42,11 @@ function Ptcrpg() {
                 cntImg={cntImg} setCntImg={setCntImg}
                 cntImg2={cntImg2} setCntImg2={setCntImg2}
                 datasDT={datasDT}
+                data={data}
             />
             <PtcrpgComBottom
                 datasDT={datasDT}
+                data={data}
             />
         </div>
     );

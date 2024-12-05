@@ -49,7 +49,7 @@ function Footer() {
                         </div>
                         <div className='footerMiddleRight'>
                             <p style={{ paddingTop: '30px' }}>프리즘㈜ <span>|</span> 대표이사 홍길동 <span>|</span> 사업자등록번호 12-3725-456 <span>|</span> 통신판매업신고번호 2024-천안-1130 <span>|</span> 충청남도 천안시 동남구 천안로 12 프리즘빌딩 101호</p>
-                            <br></br><p>이메일 상담 info@prism.kr <span>|</span> 유선 상담 1515-1515 <AiOutlineCopyrightCircle /><span style={{ fontWeight: 700, color: 'rgb(53, 53, 53)' }}>prism Co.,Ltd</span></p>
+                            <br></br><p style={{paddingTop:'1px'}}>이메일 상담 info@prism.kr <span>|</span> 유선 상담 1515-1515 <AiOutlineCopyrightCircle /><span style={{ fontWeight: 700, color: 'rgb(53, 53, 53)', backgroundColor:'none' }}>prism Co.,Ltd</span></p>
                             <br></br><br></br>
                             <p className='footerMiddleRightText'>일부 상품의 경우 프리즘은 통신판매중개자이며 통신판매 당사자가 아닙니다.</p><br></br><p className='footerMiddleRightText'>해당되는 상품의 경우 상품, 상품정보, 거래에 관한 의무와 책임은 판매자에게 있으므로, 각 상품 페이지에서 구체적인 내용을 확인하시기 바랍니다.</p>
                             <br></br><br></br>
