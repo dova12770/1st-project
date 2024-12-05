@@ -13,7 +13,7 @@ function PtcrpgComTop(props){
         <div className="outerContainer">
             <div className='container'>
                 <div className='mainTitle'>
-                    <h1>{props.ppTitle}</h1>
+                    <h1>{props.datasDT[0].ppTitleDT}</h1>
                 </div>
                 <div className='intro'>
                     <div className='introLeft'>
