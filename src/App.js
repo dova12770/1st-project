@@ -19,12 +19,18 @@ import MainFooter from "./footer/MainFooter";
 import MyPage from './myPage/MyPage';
 import MySetting from './myPage/MySetting';
 import PtcrTotal from './merge/PtcrTotal';
+import InterestPage from './pages/InterestPage';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import MainPage from './pages/MainPage';
+import SignupPage from './pages/SignupPage';
+import LoginPage from './pages/LoginPage';
 
   //return <Merge/>;
 function App() {
   return <PtcrTotal/>
   // return <Body/>
   // return <Merge/>
+  //return <InterestPage/>
   // return <Advertisement/>
   // return <Rank/>
   // return <More/>
@@ -40,6 +46,19 @@ function App() {
   // return<MyPage/>
   // return<MySetting/>
 
+  //return <SignupPage />;
+
+  //정민 app.js 
+  // return (
+  //   <Router>
+  //     <Routes>
+  //       <Route path="/" element={<MainPage />} /> 
+  //       <Route path="/interest" element={<InterestPage/>}/>
+  //       <Route path="/signup" element={<SignupPage />} />
+  //       <Route path="/login" element={<LoginPage />} />
+  //     </Routes>
+  //   </Router>
+  // );
 }
 
 export default App;

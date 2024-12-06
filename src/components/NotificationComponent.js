@@ -1,12 +1,12 @@
-import '../css/Notification.css';
+
 
 function NotificationComponent({ alarms, onDelete }){
 
     return (
-        <div className='alarm'>
-            <span>{alarms.content}</span>
+        <div className='notification'>
+            <span className='notification_content'>{alarms.content}</span>
             <button 
-                className='delete_alarm' 
+                className='delete_notification' 
                 onClick={() => onDelete(alarms.id)}>X</button>
         </div>
     );

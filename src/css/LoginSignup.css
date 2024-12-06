@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%; /* 컨테이너의 너비를 400px로 고정 */
+    height: 90vh;
+    margin: 50px auto; /* 컨테이너를 화면 중앙에 정렬 */
+    border: 1px solid #ddd; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+    background-color: #ffffff; 
+    overflow: hidden; /* 내부 요소가 컨테이너를 넘치지 않도록 설정 */
+    /* 수직정렬 */
+    display : flex;
+    justify-content :center;
+    align-items: center;  
+    flex-direction: column; 
+}
+
+.text_login, .text_signup, .text_fingPw { /* 로그인 회원가입 비밀번호찾기 글자*/
+    text-align: center; 
+    color: #494949;
+    font-size: 3rem; 
+    font-weight: bold; 
+    margin: 20px 0;
+}
+
+.body, .md_find{ /* 로그인 부분, modal창 부분*/
+    width: 40%;
+    padding: 30px; 
+    border: 1px solid #ddd; 
+    border-radius: 20px; 
+    background-color: #ffffff; 
+}
+
+.body input , .md_find input { /* 이름 아이디 비밀번호 input*/
+    width: 100%; 
+    padding: 12px; 
+    margin: 15px 0; 
+    border: 1px solid #ddd; 
+    border-radius: 5px; 
+    font-size: 16px; 
+}
+
+.body input:focus { /* input 테두리, 그림자설정 */
+    border-color: #494949; 
+    outline: #494949; /* 기본 브라우저 포커스 테두리 제거 */
+    box-shadow: 0 0 4px rgba(0, 24, 11, 0.5); 
+}
+
+
+.body button, .md_find .btn_find { /* 로그인, 회원가입, 카카오, 네이버 버튼*/
+    width: 100%; 
+    padding: 12px; 
+    margin-top: 20px;
+    background-color: #494949; 
+    color: #ffffff; 
+    border: none; 
+    border-radius: 5px; 
+    font-size: 18px; 
+    font-weight: bold; 
+    cursor: pointer;
+    transition: background-color 0.3s; 
+}
+
+.btn_login, .btn_signup{ 
+    margin-bottom: 30px;
+}
+
+.btn_logins{ /* 카카오 네이버 버튼*/
+    margin-top: 10px;
+}
+
+
+.btn_login:hover, .btn_signup:hover, .btn_find:hover  { /* 로그인 회원가입 비밀번호찾기 버튼 마우스 hover - 색농도*/
+    background-color: #242424; 
+}
+
+.btn_logins .kakao{ 
+    background-color: #fffb00;
+    color: #242424; 
+}
+
+.btn_logins .naver{
+    background-color: #00ff0de3;
+    color: #242424; 
+}
+
+.btn_logins .kakao:hover, .btn_logins .naver:hover{ /* 카카오 네이버 버튼 마우스 hover - 테두리*/
+    border-color: #494949; 
+    outline: #494949; /* 기본 브라우저 포커스 테두리 제거 */
+    box-shadow: 0 0 10px rgba(0, 24, 11, 0.5); 
+}
+
+.body_bottom p{ /* 비밀번호 찾기, 로그인/회원가입 이동 글자 margin*/
+    margin: 5px 0px;
+}
+
+.md_find { /* 모달창 */
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.close_md_find { /* 모달창 닫기 */
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
