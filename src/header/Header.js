@@ -38,8 +38,8 @@ function Header() {
                 </div>
                 <div className='logoRight'>
                     <div className='bell' onClick={ () => setIsOpen(!isOpen) }> <CgBell /> 알림</div>
-                    <div className='bell'><CgHeart/>선호</div>
-                    <div className='login_btn'>로그인/회원가입</div>
+                    <div className='bell' onClick={ ()=> navigate('/interest')}><CgHeart/>선호</div>
+                    <div className='login_btn' onClick={ ()=> navigate('/login')}>로그인/회원가입</div>
                 </div>
             </div>
 
