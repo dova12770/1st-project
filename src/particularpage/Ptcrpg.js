@@ -6,8 +6,8 @@ import Datas from './data/Datas';
 function Ptcrpg() {
 
     const [datasDT, setDatasDT] = useState(Datas);
+    const data = datasDT.filter(data => data.idDT === '001'); //연결된 컴포넌트에 아이디값만 변경하면 사진,내용 자동으로 바뀜
 
-    const data = datasDT.filter(data => data.idDT === '003');
 
     const getMainTainLikeCnt = () => Number(localStorage.getItem('likeCnt')) || 0;  // 좋아요버튼 공유버튼 새로고침해도 유지 시작
     const getMainTainShareCnt = () => Number(localStorage.getItem('shareCnt')) || 0;

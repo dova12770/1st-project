@@ -10,7 +10,6 @@ import { IoIosArrowDropright } from "react-icons/io";
 function PtcrpgComTop(props){
 
     
-
     return(
         <div className="outerContainer">
             <div className='container'>

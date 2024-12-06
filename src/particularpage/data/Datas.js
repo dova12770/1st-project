@@ -39,8 +39,8 @@ let Datas = [
         fundDate2DT: '2024.6.03',
         paydayDT: '2024.6.10',
         goDeliveryDT: '2024.6.12',
-        userPriceDT: ['15,000', '25,000', '35,000', '45,000', '55,000'],
-        userPriceTextDT: ['만오천원 패키지', '이만오천원 패키지', '삼만오천원 패키지', '사만오천원 패키지', '오만오천원 패키지'],
+        userPriceDT: ['15,000', '15,000', '15,000', '16,000', '17,000'],
+        userPriceTextDT: ['S 사이즈', 'M 사이즈', 'L 사이즈', 'XL 사이즈', 'XXL 사이즈'],
 
         imagesDT: [
             process.env.PUBLIC_URL + '/images/방염담요1.jpg',
@@ -68,7 +68,7 @@ let Datas = [
         paydayDT: '2024.7.25',
         goDeliveryDT: '2024.7.27',
         userPriceDT: ['20,000', '30,000', '40,000', '50,000', '60,000'],
-        userPriceTextDT: ['이만원 패키지', '삼만원 패키지', '사만원 패키지', '오만원 패키지', '육만원 패키지'],
+        userPriceTextDT: ['1개 세트', '2개 세트', '3개 세트', '4개 세트', '5개 세트'],
 
         imagesDT: [
             process.env.PUBLIC_URL + '/images/재난생존가방1.jpg',

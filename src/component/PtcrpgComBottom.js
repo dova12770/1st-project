@@ -7,18 +7,16 @@ import PtcrpgExpnRightCom from './PtcrpgExpnRightCom';
 
 function PtcrpgComBottom(props) {
 
-
-
     const navigate = useNavigate();
 
     return (
         <>
             <div className='container2'>
                 <div className='ptcrNav'>  {/* 네비바 */}
-                    <div onClick={()=> navigate('/planpage')}>프로젝트 계획</div>
-                    <div onClick={()=> navigate('/updatepage')}>업데이트</div>
-                    <div onClick={()=> navigate('/commupage')}>커뮤니티</div>
-                    <div onClick={()=> navigate('/reviewpage')}>후기</div>
+                    <div onClick={() => navigate('/planpage')}>프로젝트 계획</div>
+                    <div onClick={() => navigate('/updatepage')}>업데이트</div>
+                    <div onClick={() => navigate('/commupage')}>커뮤니티</div>
+                    <div onClick={() => navigate('/reviewpage')}>후기</div>
                 </div>
                 <div className='expn'>  {/* 상품설명창 */}
                     <div className='expnLeft'>  {/* 이미지및상품소개 박스 */}
@@ -57,9 +55,9 @@ function PtcrpgComBottom(props) {
                     </div>
                     <div className='expnRight'>  {/* 상품 상세옵션 선택 박스 map반복 */}
                         {
-                            props.data[0].userPriceDT.map((item, index) => { // ptcrpg에서 아이디값변경시 상세옵션선택창 안바뀜 수정@@@@@@@@@@@@@@@@@@@@@@@@
+                            props.data[0].userPriceDT.map((item, index) => {
                                 return (
-                                    <PtcrpgExpnRightCom item={item} index={index} datasDT={props.datasDT} />
+                                    <PtcrpgExpnRightCom item={item} index={index} data={props.data} />
                                 )
                             })
                         }
