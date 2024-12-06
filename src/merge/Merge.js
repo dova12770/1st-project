@@ -6,11 +6,11 @@ import Body from '../pages/Body';
 import MyPage from '../myPage/MyPage';
 import MySetting from '../myPage/MySetting';
 function Merge() {
-    return (
+    return (    //잘 되는지 확인용 파일
         <div className="merge-container">
             <Header />
-            <MyPage />
-            {/* <MySetting/> */}
+            {/* <MyPage /> */}
+            <MySetting/>
             {/* <Body/> */}
             <Footer />
         </div>
