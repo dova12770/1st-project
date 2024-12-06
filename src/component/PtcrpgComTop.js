@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import '../particularpage/Ptcrpg.css';
 import { IoIosHeartEmpty, IoIosHeart } from "react-icons/io";
 import { CiShare2 } from "react-icons/ci";
