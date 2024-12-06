@@ -35,7 +35,6 @@ function InterestPage(){
 
     return(
         <div>
-            <Header/>
             <div className='interest_container'>
                 <div className='interest_body'>
                     <div className='title_body'> <h1>관심 프로젝트</h1> </div>
@@ -64,7 +63,6 @@ function InterestPage(){
                     
                 </div>
             </div>
-            <Footer/>
 
         </div>
     );

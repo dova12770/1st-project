@@ -27,9 +27,9 @@ import LoginPage from './pages/LoginPage';
 
   //return <Merge/>;
 function App() {
-  return <PtcrTotal/>
+  //return <PtcrTotal/>
   // return <Body/>
-  // return <Merge/>
+  return <Merge/>
   //return <InterestPage/>
   // return <Advertisement/>
   // return <Rank/>
@@ -38,7 +38,6 @@ function App() {
   // return<SideChat/>
   // return <Footer />;
   //return <TopDown/>;
-  
   // return <Header />
   // return <MainPtcrpg />
   // return <TopDown />

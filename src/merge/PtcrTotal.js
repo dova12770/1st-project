@@ -12,21 +12,15 @@ import ReviewPage from "../particularpage/pages/ReviewPage";
 function PtcrTotal() {
     return (
 
-            <Router>
-                <div>
-                    <Header />
-                    <Routes>
-                        <Route path="/" element={<Ptcrpg />} />
-                        <Route path='/planpage' element={<Ptcrpg />} />
-                        <Route path='/updatepage' element={<UpdatePage />} />
-                        <Route path='/commupage' element={<CommuPage />} />
-                        <Route path='/reviewpage' element={<ReviewPage />} />
-                    </Routes>
-                    <TopDown />
-                    <MainFooter />
-
-                </div>
-            </Router>
+        <>
+            <Routes>
+                <Route path="/" element={<Ptcrpg />} />
+                <Route path='/planpage' element={<Ptcrpg />} />
+                <Route path='/updatepage' element={<UpdatePage />} />
+                <Route path='/commupage' element={<CommuPage />} />
+                <Route path='/reviewpage' element={<ReviewPage />} />
+            </Routes>
+        </>
     )
 }
 
