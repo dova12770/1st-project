@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.MyPage_Container {
+    margin: 80px;
+    width: 80%;
+}
+
+.Prof_Container {
+    margin: auto;
+    margin-left: 10px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.Avatar {
+    display: flex;
+    float: left;
+    width: 20%;
+}
+
+.UserName {
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    width:80%;
+    padding:10px;
+    font-size: 25px;
+}
+
+.OptionGear{
+    padding-left: 10px;
+    font-size: 25px;
+    text-align: 'center';
+    cursor: pointer;
+}
+
+.Prof_button{
+    padding: 10px;
+    width: 150px;
+    border: 1px solid #F08080;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    text-align: 'center';
+    cursor: pointer;
+}
+
+.MyCategory{
+    text-align: 'center'
+}
+ul {
+    display: flex;
+    list-style: none;
+    text-align: 'center'
+}
+
+li {
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight:bolder;
+    margin: 6rm;
+    padding: 10px;
+    cursor: pointer;
+    text-align: 'center';
+}
+
+.MyPage_Content { 
+    width:auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    margin-top: 20px; 
+    font-size: 20px; 
+    color: grey;
+}

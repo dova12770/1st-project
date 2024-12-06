@@ -16,6 +16,8 @@ import Merge from './merge/Merge';
 import Header from "./header/Header";
 import MainPtcrpg from "./particularpage/MainPtcrpg";
 import MainFooter from "./footer/MainFooter";
+import MyPage from './myPage/MyPage';
+import MySetting from './myPage/MySetting';
 
   //return <Merge/>;
 function App() {
@@ -34,6 +36,9 @@ function App() {
   // return <MainPtcrpg />
   // return <TopDown />
   // return <MainFooter />
+  // return<MyPage/>
+  // return<MySetting/>
+
 }
 
 export default App;
