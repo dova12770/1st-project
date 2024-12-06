@@ -7,6 +7,7 @@ import { CgList } from "react-icons/cg";
 import { CgMicrosoft } from "react-icons/cg";
 import NotificationData from '../data/NotificationData';
 import NotificationComponent from '../components/NotificationComponent';
+import { useNavigate } from 'react-router-dom';  // useNavigate 훅 임포트
 
 function Header() {
 
@@ -18,6 +19,9 @@ function Header() {
 
     // 알림창 상태
     const [isOpen, setIsOpen] = useState(false); 
+
+    // useNavigate 훅을 사용하여 navigate 함수 가져오기
+    const navigate = useNavigate();
 
     
     // 클릭된 알람을 제거
@@ -57,16 +61,16 @@ function Header() {
 
             {/* 알림창 */}
             {  isOpen && (
-                <div className='alarm_box'>
-                    <button className='close_alarm' onClick={()=>{
+                <div className='notification_box'>
+                    <button className='close_notification' onClick={()=>{
                         setIsOpen(false);
                     }}>X</button>
 
-                    <div className='alarm_top'>
+                    <div className='notification_top'>
                         <h3>사용자 아이디 님 {alarms.filter( (alarms) => alarms.userId === 'aaaa' ).length}개의 알람이 있습니다.</h3> {/* userid가 aaaa인 alarm 개수 */}
                     </div>
 
-                    <div className='alarm-list'>
+                    <div className='notification_list'>
                         {alarms.filter( (alarms) => alarms.userId === 'aaaa' ).map( (alarms) => ( <NotificationComponent  alarms={alarms} onDelete={onDelete} /> ))} {/* userid가 aaaa인 alarm 반복 렌더링 */}
                     </div>
                     
