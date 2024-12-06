@@ -64,11 +64,11 @@ function PtcrpgComTop(props){
                                 </div>
                             </div>
                             <div className='introRight2Bottom'>
-                                <div>{
+                                <div className="heartShareBtn">{
                                     props.liked ? (<IoIosHeart cursor="pointer" color="red" onClick={props.toggleLike} />) : (<IoIosHeartEmpty cursor="pointer" onClick={props.toggleLike} />) 
                                 }<span style={{ fontSize: '12px' }}>{props.likeCnt}</span></div>        {/* 하트 누르면 빨간색으로 변경 카운트1 다시누르면 빈하트변경 카운트-1 */}
-                                <div><CiShare2 cursor={'pointer'} onClick={() => { props.setShareCnt(props.shareCnt + 1) }} /><span style={{ fontSize: '12px' }}>{props.shareCnt}</span></div>
-                                <div><button className='jumunBtn'>예약 주문하기</button></div>           {/* 공유 누르면 카운트+1 */}
+                                <div className="heartShareBtn"><CiShare2 cursor={'pointer'} onClick={() => { props.setShareCnt(props.shareCnt + 1) }} /><span style={{ fontSize: '12px' }}>{props.shareCnt}</span></div>
+                                <div><button className='jumunBtn' onClick={()=>{window.confirm('후원 하시겠습니까?')}}>프로젝트 후원하기</button></div>           {/* 공유 누르면 카운트+1 */}
                             </div>
                         </div>
                     </div>

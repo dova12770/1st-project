@@ -61,8 +61,10 @@ function PtcrpgComBottom(props) {
                                 )
                             })
                         }
+                        <div className="cartSell">
+                        <div className="cart" onClick={()=>{ window.confirm('장바구니에 담았습니다. 장바구니 페이지로 이동하시겠습니까?') }}>장바구니</div><div className="sell">예약하기</div>
+                        </div>
                     </div>
-
                 </div>
             </div>
         </>
