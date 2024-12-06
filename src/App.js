@@ -29,12 +29,9 @@ function App() {
   // return <More/>
   // return <Slide/>
   // return<SideChat/>
-  // return <Footer />;
   //return <TopDown/>;
-  
   // return <Header />
   // return <MainPtcrpg />
-  // return <TopDown />
   // return <MainFooter />
   // return<MyPage/>
   // return<MySetting/>

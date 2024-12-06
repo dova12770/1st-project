@@ -2,7 +2,10 @@
     margin: 0;
     padding: 10;
     box-sizing: border-box;
-
+}
+@font-face {
+    font-family: 'gugi';
+    src: url(../css/fonts/Gugi-Regular.ttf) format('truetype');
 }
 .HContainer {
     height: 130px;
@@ -17,8 +20,9 @@
 }
 
 .Prism {
+    font-family: 'gugi' ;
     font-size: 50px;
-    font-weight: bold;
+    font-weight: bold; 
     cursor: pointer;
 }
 
