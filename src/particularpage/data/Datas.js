@@ -42,7 +42,7 @@ let Datas = [
         paydayDT: '2024-6-10',
         goDeliveryDT: '2024-6-12',
         userPriceDT: ['15,000', '15,000', '15,000', '16,000', '17,000'],
-        userPriceTextDT: ['S 사이즈', 'M 사이즈', 'L 사이즈', 'XL 사이즈', 'XXL 사이즈'],
+        userPriceTextDT: ['S 사이즈', 'M 사이즈', 'L 사이즈', 'XL  사이즈', 'XXL 사이즈'],
 
         imagesDT: [
             process.env.PUBLIC_URL + '/images/방염담요1.jpg',
