@@ -22,9 +22,9 @@ function PtcrpgComBottom(props) {
                     <div className='expnLeft'>  {/* 이미지및상품소개 박스 */}
                         <div className='expnTitle'><CgShapeTriangle style={{ fontSize: '18px' }} />프로젝트 소개</div>
                         <div className='expnBody'><img src={props.data[0].userImagesDT[0]} width={630} /></div> {/* 가로사이즈 최대 630 */}
-                        <div className='expnBody'>이미지및상품소개</div>
+                        <div className='expnBody'>{props.data[0].userTextDT[0]}</div>
                         <div className='expnBody'><img src={props.data[0].userImagesDT[1]} width={630} /></div>
-                        <div className='expnBody'>이미지및상품소개</div>
+                        <div className='expnBody'>{props.data[0].userTextDT[1]}</div>
                         <div className='expnBody'><img src={props.data[0].userImagesDT[2]} width={630} /></div>
 
                         <div className='noticeText1'>

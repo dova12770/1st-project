@@ -5,6 +5,7 @@ import { IoIosHeartEmpty, IoIosHeart } from "react-icons/io";
 import { CiShare2 } from "react-icons/ci";
 import { IoIosArrowDropleft } from "react-icons/io";
 import { IoIosArrowDropright } from "react-icons/io";
+import dayjs from 'dayjs';
 
 
 function PtcrpgComTop(props){
@@ -35,12 +36,12 @@ function PtcrpgComTop(props){
                         <div className='introRight1'>
                             <div>
                                 <div><p style={{ fontSize: '10px' }}>모인금액</p></div>
-                                <div><p style={{ fontSize: '25px' }}>{props.data[0].convergeAmountDT}<span style={{ fontSize: '10px' }}> 원</span><span style={{ fontSize: '15px' }}> {props.data[0].cvgPercentDT}%</span></p></div>
+                                <div><p style={{ fontSize: '25px' }}>{props.data[0].convergeAmountDT}<span style={{ fontSize: '10px' }}> 원</span><span style={{ fontSize: '15px' }}> {((props.data[0].convergeAmountDT/props.data[0].targetAmountDT)*100).toFixed(2)}%</span></p></div>
                             </div>
                             <br></br>
                             <div>
                                 <div><p style={{ fontSize: '10px' }}>남은시간</p></div>
-                                <div><p style={{ fontSize: '25px' }}>{props.data[0].remainDateDT}<span style={{ fontSize: '10px' }}> 일</span></p></div>
+                                <div><p style={{ fontSize: '25px' }}>{dayjs(new Date(props.data[0].fundDate2DT)).diff(dayjs(),'day')}<span style={{ fontSize: '10px' }}> 일</span></p></div>
                             </div>
                             <br></br>
                             <div>
