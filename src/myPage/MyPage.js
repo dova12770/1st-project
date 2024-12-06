@@ -7,7 +7,7 @@ import MyPageCategory from './MyPageCategory';
 
 function MyPage() {
     const CateName = ['프로필', '후원한 프로젝트', '작성후기', '팔로워', '팔로잉'];
-    const [selectedIndex, setSelectedIndex] = useState(null);
+    const [selectedIndex, setSelectedIndex] = useState(0);
 
     return (
         <div className='MyPage_Container'>
