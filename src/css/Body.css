@@ -1,0 +1,21 @@
+
+.bodyFrame{
+    
+    flex-direction: row;
+    position:relative;
+    display: flex;
+}
+
+.bodyaside{
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+.chat{
+    width: 250px;
+    position: fixed;
+    display: flex;
+    right: 0px;
+    z-index: 1;
+}
