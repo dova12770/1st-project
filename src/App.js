@@ -18,12 +18,13 @@ import MainPtcrpg from "./particularpage/MainPtcrpg";
 import MainFooter from "./footer/MainFooter";
 import MyPage from './myPage/MyPage';
 import MySetting from './myPage/MySetting';
+import PtcrTotal from './merge/PtcrTotal';
 
   //return <Merge/>;
 function App() {
-
+  return <PtcrTotal/>
   // return <Body/>
-  return <Merge/>
+  // return <Merge/>
   // return <Advertisement/>
   // return <Rank/>
   // return <More/>
