@@ -1,19 +1,21 @@
 import React, { useState, useEffect } from 'react';
-import '../css/Modal.css'; 
+import '../css/Modal.css';
 
 function AddDeliveryAddress({ open, close, save }) {
-    const [cardInfo, setCardInfo] = useState({
-        owner: '',
+    const [addressInfo, setAddressInfo] = useState({
+        name: '',
+        phone: '',
         address: '',
-        tel: ''
+        detail: ''
     });
 
     useEffect(() => {
         if (open) {
-            setCardInfo({
-                owner: '',
+            setAddressInfo({
+                name: '',
+                phone: '',
                 address: '',
-                tel: ''
+                detail: ''
             });
         }
     }, [open]);
@@ -24,80 +26,70 @@ function AddDeliveryAddress({ open, close, save }) {
         const { name, value } = e.target;
 
         let filteredValue = value;
-        if (name === "owner") {
-            filteredValue = value.replace(/[^a-zA-Zㄱ-힣\s]/g, ''); 
-        } else if (name === "adress") {
-            filteredValue = value.replace(/[^a-zA-Zㄱ-힣\s]/g, ''); 
-        } else if (name === "tel") {
-            filteredValue = value.replace(/\D/g, '')
+        if (name === "name") {
+            filteredValue = value.replace(/[^a-zA-Zㄱ-힣\s]/g, '');
+        } else if (name === "phone") {
+            filteredValue = value.replace(/\D/g, '');
+            if (filteredValue.length > 11) filteredValue = filteredValue.slice(0, 11);
+            
         }
 
-        setCardInfo({ ...cardInfo, [name]: filteredValue });
+        setAddressInfo({ ...addressInfo, [name]: filteredValue });
     };
 
     const handleSubmit = () => {
-        const { number, expiration, owner, cvc } = cardInfo;
+        const { name, phone, address } = addressInfo;
 
-        if (number.length !== 16) {
-            alert("카드 번호는 16자리 숫자를 입력해야 합니다.");
+        if (!name || name.trim().length < 2) {
+            alert("이름은 최소 2자 이상의 문자를 입력해야 합니다.");
             return;
         }
-        if (expiration.length !== 4) {
-            alert("유효기간은 4자리 숫자 (MMYY)를 입력해야 합니다.");
+        if (phone.length < 10 || phone.length > 11) {
+            alert("연락처는 10~11자리 숫자를 입력해야 합니다.");
             return;
         }
-        if (!owner || owner.trim().length < 2) {
-            alert("결제 명은 최소 2자 이상의 문자를 입력해야 합니다.");
-            return;
-        }
-        if (cvc.length !== 3) {
-            alert("CVC는 3자리 숫자를 입력해야 합니다.");
+        if (!address || address.trim().length < 5) {
+            alert("주소는 최소 5자 이상 입력해야 합니다.");
             return;
         }
 
-        save(`${number} (${owner})`);
+        save(`${name}, ${phone}, ${address} ${addressInfo.detail ? `(${addressInfo.detail})` : ''}`);
     };
 
     return (
         <div className="modalBackdrop">
             <div className="modalContent">
-                <h2>결제수단 추가</h2>
-                <div>
-                    <input
-                        type="text"
-                        name="number"
-                        placeholder="카드 번호 (16자리 숫자)"
-                        value={cardInfo.number}
-                        onChange={handleChange}
-                    />
-                </div>
-                <div>
-                    <input
-                        type="text"
-                        name="expiration"
-                        placeholder="유효기간 (MMYY)"
-                        value={cardInfo.expiration}
-                        onChange={handleChange}
-                    />
-                </div>
-                <div>
-                    <input
-                        type="text"
-                        name="owner"
-                        placeholder="결제 명 (문자만, 최소 2자)"
-                        value={cardInfo.owner}
-                        onChange={handleChange}
-                    />
-                </div>
-                <div>
-                    <input
-                        type="text"
-                        name="cvc"
-                        placeholder="CVC (3자리 숫자)"
-                        value={cardInfo.cvc}
-                        onChange={handleChange}
-                    />
-                </div>
+                <h2>배송지 추가</h2>
+                <input
+                    type="text"
+                    name="name"
+                    placeholder="이름 (문자만, 최소 2자)"
+                    value={addressInfo.name}
+                    onChange={handleChange}
+                />
+                <input
+                    type="text"
+                    name="phone"
+                    placeholder="연락처 (10~11자리 숫자)"
+                    value={addressInfo.phone}
+                    onChange={handleChange}
+                />
+                <input
+                    type="text"
+                    name="address"
+                    placeholder="주소 (최소 5자)"
+                    value={addressInfo.address}
+                    onChange={handleChange}
+                />
+                <input
+                    type="text"
+                    name="detail"
+                    placeholder="상세주소 (선택 입력)"
+                    value={addressInfo.detail}
+                    onChange={(e) =>
+                        setAddressInfo({ ...addressInfo, detail: e.target.value })
+                    }
+                />
                 <div className="modalButtons">
                     <button onClick={close}>취소</button>
                     <button onClick={handleSubmit}>저장</button>

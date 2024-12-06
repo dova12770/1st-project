@@ -1,7 +1,7 @@
 import '../css/MySettingCss.css';
 import { TbAlertSquare } from "react-icons/tb";
 import { useState } from 'react';
-import AddPay from '../components/Addpay';
+import AddPay from '../components/AddPay';
 
 function Pay() {
     const [openModal, setOpenModal] = useState(false);

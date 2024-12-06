@@ -77,7 +77,7 @@
 
 .payInfoItem {
     display: flex;
-    justify-content: space-between; /* 항목과 삭제 버튼 간 간격 유지 */
+    justify-content: space-between;
     align-items: center;
     padding: 10px;
     border: 1px solid #ddd;
@@ -100,3 +100,5 @@
 .deleteButton:hover {
     background-color: #da7474; 
 }
+
+
