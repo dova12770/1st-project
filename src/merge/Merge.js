@@ -5,15 +5,23 @@ import './Merge.css';
 import Body from '../pages/Body';
 import MyPage from '../myPage/MyPage';
 import MySetting from '../myPage/MySetting';
+import PtcrTotal from './PtcrTotal';
+import { BrowserRouter } from 'react-router-dom';
+import MainFooter from '../footer/MainFooter';
+import HeaderTotal from './HeaderTotal';
 function Merge() {
-    return (    //잘 되는지 확인용 파일
+    return (
+        <BrowserRouter>
         <div className="merge-container">
             <Header />
-            {/* <MyPage /> */}
-            <MySetting/>
-            {/* <Body/> */}
-            <Footer />
+            <PtcrTotal />
+            <HeaderTotal />
+            <MyPage />
+            <MySetting />
+            <Body />
+            <MainFooter />
         </div>
+        </BrowserRouter>
     );
 }
 

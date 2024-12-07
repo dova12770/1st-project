@@ -15,7 +15,10 @@ import MainPtcrpg from "../particularpage/MainPtcrpg";
 
 function MainFooter(){
     return(
+        <>
         <Footer />
+        <TopDown />
+        </>
     )
 }
 

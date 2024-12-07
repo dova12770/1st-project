@@ -5,7 +5,7 @@ import { CgShapeTriangle } from "react-icons/cg";
 import PtcrpgExpnRightCom from './PtcrpgExpnRightCom';
 
 
-function PtcrpgCom2(props) {
+function PtcrpgComBottom(props) {
 
     const navigate = useNavigate();
 
@@ -13,19 +13,19 @@ function PtcrpgCom2(props) {
         <>
             <div className='container2'>
                 <div className='ptcrNav'>  {/* 네비바 */}
-                    <div onClick={()=> navigate('/planpage')}>프로젝트 계획</div>
-                    <div onClick={()=> navigate('/updatepage')}>업데이트</div>
-                    <div onClick={()=> navigate('/commupage')}>커뮤니티</div>
-                    <div onClick={()=> navigate('/reviewpage')}>후기</div>
+                    <div onClick={() => navigate('/planpage')}>프로젝트 계획</div>
+                    <div onClick={() => navigate('/updatepage')}>업데이트</div>
+                    <div onClick={() => navigate('/commupage')}>커뮤니티</div>
+                    <div onClick={() => navigate('/reviewpage')}>후기</div>
                 </div>
                 <div className='expn'>  {/* 상품설명창 */}
                     <div className='expnLeft'>  {/* 이미지및상품소개 박스 */}
                         <div className='expnTitle'><CgShapeTriangle style={{ fontSize: '18px' }} />프로젝트 소개</div>
-                        <div className='expnBody'><img src={props.userImages[0]} width={630} /></div> {/* 가로사이즈 최대 630 */}
-                        <div className='expnBody'>이미지및상품소개</div>
-                        <div className='expnBody'><img src={props.userImages[0]} width={630} /></div>
-                        <div className='expnBody'>이미지및상품소개</div>
-                        <div className='expnBody'><img src={props.userImages[0]} width={630} /></div>
+                        <div className='expnBody'><img src={props.data[0].userImagesDT[0]} width={630} /></div> {/* 가로사이즈 최대 630 */}
+                        <div className='expnBody'>{props.data[0].userTextDT[0]}</div>
+                        <div className='expnBody'><img src={props.data[0].userImagesDT[1]} width={630} /></div>
+                        <div className='expnBody'>{props.data[0].userTextDT[1]}</div>
+                        <div className='expnBody'><img src={props.data[0].userImagesDT[2]} width={630} /></div>
 
                         <div className='noticeText1'>
                             <div className='noticeTitle'><CgShapeTriangle style={{ fontSize: '18px' }} />신뢰와 안전</div>
@@ -55,15 +55,16 @@ function PtcrpgCom2(props) {
                     </div>
                     <div className='expnRight'>  {/* 상품 상세옵션 선택 박스 map반복 */}
                         {
-                            props.userPrice.map((item, index) => {
-
+                            props.data[0].userPriceDT.map((item, index) => {
                                 return (
-                                    <PtcrpgExpnRightCom userPrice={item} index={index} userPriceText={props.userPriceText} />
+                                    <PtcrpgExpnRightCom item={item} index={index} data={props.data} />
                                 )
                             })
                         }
+                        <div className="cartSell">
+                        <div className="cart" onClick={()=>{ window.confirm('장바구니에 담았습니다. 장바구니 페이지로 이동하시겠습니까?') }}>장바구니</div><div className="sell">예약하기</div>
+                        </div>
                     </div>
-
                 </div>
             </div>
         </>
@@ -71,4 +72,4 @@ function PtcrpgCom2(props) {
 }
 
 
-export default PtcrpgCom2;
+export default PtcrpgComBottom;

@@ -114,3 +114,91 @@ li {
 .dropdown-menu li {
     margin: 5px 0;
 }
+
+
+/* 알림창 */
+.notification_box {
+    position: fixed;
+    top: 5rem; /* 화면에서 보이게 조정 */
+    right: 3rem;
+    width: 400px;
+    height: 400px;
+    background-color: #fafad1;
+    border-radius: 10px;
+    padding: 20px;
+    z-index: 1000;
+}
+
+/* 닫기 버튼 */
+.close_notification{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #999;
+}
+
+.close_notification:hover {
+    color: #ff6f61;
+}
+
+/* 알림창 헤더 */
+.notification_top {
+    margin: 30px 0;
+    font-weight: bold;
+    color: #444;
+    background-color: none;
+}
+
+/* 알람 항목 */
+.notification {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.notification:hover {
+    background-color: #ffe9e0;
+}
+
+/* 알람 닫기 버튼 */
+.delete_notification {
+    background: none;
+    border: none;
+    font-size: 14px;
+    font-weight: bold;
+    color: #999;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.delete_notification:hover {
+    color: #F08080;
+}
+
+/* 모두 읽음 버튼 */
+.deleteAll {
+    width: 90%;
+    height: 40px;
+    bottom: 20px;
+    left: 20px;
+    background-color: #F08080;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.deleteAll:hover {
+    background-color: #ee6b6b;
+}

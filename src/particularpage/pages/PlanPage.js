@@ -11,7 +11,7 @@ function PlanPage() {
                 <div onClick={() => navigate('/commupage')}>커뮤니티</div>
                 <div onClick={() => navigate('/reviewpage')}>후기</div>
             </div>
-            <h1 style={{textAlign:'center'}}>프로젝트계획페이지입니다.</h1>
+            <h1 style={{textAlign:'center', marginTop:'50px' }}>프로젝트계획 페이지입니다.</h1>
         </>
     )
 }
