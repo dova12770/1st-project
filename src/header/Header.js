@@ -33,7 +33,7 @@ function Header() {
     return (
         <div className = 'HContainer'>
             <div className='headerContainer'>
-                <div className='PrTitle'>
+                <div className='PrTitle' onClick={()=>navigate('/')}>
                     <span className='Prism'>Prism</span>
                 </div>
                 <div className='logoRight'>
