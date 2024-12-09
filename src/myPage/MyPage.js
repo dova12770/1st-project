@@ -17,9 +17,9 @@ function MyPage() {
                     <img src={userImg} alt='유저기본이미지' height='100px' width='100px' />
                 </div>
                 <div className='UserName'>김도현
-                    <div className='OptionGear' onClick={() => navigate('./MySetting')}><GoGear /></div>
+                    <div className='OptionGear' onClick={() => navigate('/MySetting')}><GoGear /></div>
                 </div>
-                <div className='Prof_button' onClick={() => navigate('./MySetting')}>
+                <div className='Prof_button' onClick={() => navigate('/MySetting')}>
                     프로필 변경
                 </div>
             </div>
