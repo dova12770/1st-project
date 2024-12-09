@@ -23,13 +23,13 @@ function Merge() {
             <div className="merge-container">
                 <Header isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} />
                 <Routes>
-                    <Route path='/' element={<Body />} />
+                    <Route path='/' element={<Body isLoggedIn={isLoggedIn}/>} />
                     <Route path='/ptcr' element={<PtcrTotal />} />                   
                     <Route path='/login' element={<LoginPage setIsLoggedIn={setIsLoggedIn}/>} /> {/* 로그인 */}
                     <Route path="/signup" element={<SignupPage />} /> {/* 회원가입 */}
-                    <Route path='/mypage' element={<MyPage />} /> {/* 마이페이지 */}
+                    <Route path='/mypage' element={<MyPage isLoggedIn={isLoggedIn}/>} /> {/* 마이페이지 */}
                     <Route path='/mysetting' element={<MySetting />} />
-                    <Route path="/interest" element={<InterestPage />} /> {/* 선호 */}
+                    <Route path="/interest" element={<InterestPage isLoggedIn={isLoggedIn}/>} /> {/* 선호 */}
                     <Route path='/rank' element={< Rank/>} /> {/* 인기 */}
 
                     {/*<Route path='/' element={< />} /> */} {/* 신규 */}
