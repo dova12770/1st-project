@@ -11,7 +11,7 @@
     width: 97vw;
 }
 
-.container {
+.containerPP {
     width: 100%; /* 컨테이너의 너비를 400px로 고정 */
     height: 90vh;
     margin: 50px auto; /* 컨테이너를 화면 중앙에 정렬 */
