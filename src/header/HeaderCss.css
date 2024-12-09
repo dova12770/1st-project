@@ -48,7 +48,6 @@
 }
 
 .login_btn {
-
     margin: 15px;
     display: flex;
     justify-content: center;
@@ -56,6 +55,13 @@
     cursor: pointer;
 }
 
+.logout_btn {
+    margin-left: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
 .Menubar {
     position: sticky;
     top: 0;

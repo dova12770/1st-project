@@ -4,7 +4,7 @@ import { useNavigate, useLocation  } from 'react-router-dom'; //navigate와 useL
 import MainPage from './MainPage';
 import UserInfo from '../data/UserInfo';
 
-function LoginPage(){
+function LoginPage({setIsLoggedIn}){
 
     //id, pw 값 저장 useState 변수
     const [inputId, setInputId] = useState('');
@@ -55,6 +55,7 @@ function LoginPage(){
 
         if (matchedUser) {
             alert(`로그인 성공: ID=${matchedUser.userId}`);
+            setIsLoggedIn(true);
             navigate('/'); // 메인 페이지로 이동
         } else {
             alert('사용자가 없습니다');
