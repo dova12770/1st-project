@@ -1,8 +1,9 @@
 import '../css/LoginSignup.css'
 import { useState , useRef } from 'react';
 import { useNavigate, useLocation  } from 'react-router-dom'; //navigate와 useLocation으로 컴포넌트 간 상태 전달
-import MainPage from './MainPage';
+import Body from './Body';
 import UserInfo from '../data/UserInfo';
+import MyPage from '../myPage/MyPage';
 
 function LoginPage(){
 
@@ -55,7 +56,13 @@ function LoginPage(){
 
         if (matchedUser) {
             alert(`로그인 성공: ID=${matchedUser.userId}`);
-            navigate('/'); // 메인 페이지로 이동
+
+            //user정보 MainPage로 전달
+            <Body UserInfo= {UserInfo} />;
+
+            // 로그인 후 MainPage로 이동하며 userList 전달
+            navigate('/', { state: { userList: [...userList] } }); 
+
         } else {
             alert('사용자가 없습니다');
         }
@@ -64,8 +71,6 @@ function LoginPage(){
         setInputId('');
         setInputPw('');
 
-        //user정보 MainPage로 전달
-        <MainPage UserInfo= {UserInfo} />
     };
     
     return(

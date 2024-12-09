@@ -28,7 +28,7 @@ function SignupPage(){
 
     //유효성 정규식
     const nameRegex = /^[가-힣a-zA-Z]{2,}$/; // 최소 2자, 한글 또는 영문
-    const idRegex = /^[a-zA-Z0-9]{5,}$/;   // 최소 5자, 영문+숫자
+    const idRegex = /^[a-zA-Z0-9]{4,}$/;   // 최소 5자, 영문+숫자
     const pwRegex = /^(?=.*[a-z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/; // 최소 8자, 소문자, 숫자, 특수문자가 모두 포함되어야 함
 
     //유효성 검사
