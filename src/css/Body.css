@@ -1,6 +1,7 @@
 
 .bodyFrame{
-    
+    margin: auto;
+    margin-top: 40px;
     flex-direction: row;
     position:relative;
     display: flex;
