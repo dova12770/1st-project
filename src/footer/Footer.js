@@ -25,7 +25,7 @@ function Footer() {
 
     return (
         <>
-            <div className='container'>
+            <div className='containerFT'>
                 <div className='innerContainer'>
                     <div className='footerTop'>
                         <div className='footerTopLeft'>
