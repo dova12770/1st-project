@@ -1,10 +1,10 @@
 import '../css/LoginSignup.css'
 import { useState , useRef } from 'react';
 import { useNavigate, useLocation  } from 'react-router-dom'; //navigate와 useLocation으로 컴포넌트 간 상태 전달
-import MainPage from './MainPage';
+import Body from './Body';
 import UserInfo from '../data/UserInfo';
 
-function LoginPage(){
+function LoginPage({setIsLoggedIn}){
 
     //id, pw 값 저장 useState 변수
     const [inputId, setInputId] = useState('');
@@ -25,7 +25,7 @@ function LoginPage(){
     const location = useLocation();
 
     //signupPage에서 전달된 userList 받기
-    const userList = location.state?.userList || [];
+    const userList = location.state?.UserInfo || [];
 
     //모달 상태 저장 useState 변수
     const [isModalOpen, setIsModalOpen] = useState(false); 
@@ -49,13 +49,21 @@ function LoginPage(){
         event.preventDefault();
 
         //입력받은 id, pw가  userList에 있는지 확인
-        const matchedUser = userList.find(
+        const matchedUser = UserInfo.find(
             (user) => user.userId === inputId.trim() && user.userPassword === inputPw.trim()
         );
 
         if (matchedUser) {
             alert(`로그인 성공: ID=${matchedUser.userId}`);
+            setIsLoggedIn(true);
             navigate('/'); // 메인 페이지로 이동
+
+            //user정보 MainPage로 전달
+            <Body UserInfo= {UserInfo} />;
+
+            // 로그인 후 MainPage로 이동하며 userList 전달
+            navigate('/', { state: { userList: [...userList] } }); 
+
         } else {
             alert('사용자가 없습니다');
         }
@@ -64,8 +72,6 @@ function LoginPage(){
         setInputId('');
         setInputPw('');
 
-        //user정보 MainPage로 전달
-        <MainPage UserInfo= {UserInfo} />
     };
     
     return(

@@ -2,9 +2,9 @@
 let UserInfo = [
     {
         userName: '김일번',
-        userId: 'user1111',
-        userPassword: 'password1'
-    }
+        userId: 'aaaa',
+        userPassword: 'aaaa1111!'
+    },
 ];
 
 export default UserInfo;
