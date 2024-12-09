@@ -40,6 +40,7 @@ function SignupPage() {
         } else {
             if (!nameRegex.test(trimmedName)) { //input 값이 정규식과 일치하지 않는다면
                 alert('이름은 최소 2자, 한글/영문만 입력 가능합니다.');
+                setUserName('');
                 userNameInputRef.current.focus();   // 다시 이름 입력 필드로 포커스 이동
                 return false;
             } else {
@@ -57,6 +58,7 @@ function SignupPage() {
         } else {
             if (!idRegex.test(trimmedId)) { //input 값이 정규식과 일치하지 않는다면
                 alert('아이디는 최소 5자, 영문과 숫자만 입력 가능합니다.');
+                setUserId('');
                 userIdInputRef.current.focus(); // 다시 아이디 입력 필드로 포커스 이동
                 return false;
             } else {
@@ -72,7 +74,8 @@ function SignupPage() {
             return false;
         } else {
             if (!pwRegex.test(trimmedPw)) { //input 값이 정규식과 일치하지 않는다면
-                alert('비밀번호는 최소 8자, 소문자, 숫자, 특수문자를 포함해야 합니다.');
+                alert('비밀번호는 최소 8자, 소문자, 숫자, 특수문자를 포함해야 합니다.');        
+                setUserPw('');
                 userPwInputRef.current.focus(); // 다시 비밀번호 입력 필드로 포커스 이동
                 return false;
             } else {
