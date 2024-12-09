@@ -21,7 +21,7 @@ function More() {
 
                 {
                     trypro.map((item, index)=>{
-                        return <Thisproject imgs={imgs} index={index} Creatorinfo={Creatorinfo}/>
+                        return <Thisproject imgs={imgs} index={index} Creatorinfo={Creatorinfo} />
                     })
                 }
                 

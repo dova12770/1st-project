@@ -18,6 +18,7 @@ import { useState } from 'react';
 import Rank from '../pages/Rank';
 import PlanPage from '../particularpage/pages/PlanPage';
 import ScrollToTop from './ScrollToTop';
+import Datas from '../particularpage/data/Datas';
 
 
 function Merge() {
@@ -30,8 +31,8 @@ function Merge() {
                 <Header isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} />
                 <Routes>
                     <Route path='/' element={<Body />} />
-                    <Route path='/ptcr' element={<Ptcrpg />} />
-                    <Route path='/planpage' element={<Ptcrpg />} />
+                    <Route path='/ptcr/:id' element={<Ptcrpg datas={Datas} />} />
+                    <Route path='/planpage' element={<Ptcrpg datas={Datas} />} />
                     <Route path='/updatepage' element={<UpdatePage />} />
                     <Route path='/commupage' element={<CommuPage />} />
                     <Route path='/reviewpage' element={<ReviewPage />} />                
@@ -40,7 +41,7 @@ function Merge() {
                     <Route path='/mypage' element={<MyPage />} /> {/* 마이페이지 */}
                     <Route path='/mysetting' element={<MySetting />} />
                     <Route path="/interest" element={<InterestPage />} /> {/* 선호 */}
-                    <Route path='/rank' element={< Rank/>} /> {/* 인기 */}
+                    {/*<Route path='/rank' element={< Rank/>} />  인기 */}
                     {/*<Route path='/' element={< />} /> */} {/* 신규 */}
                     {/*<Route path='/' element={< />} /> */} {/* 공개예정 */}
                     {/*<Route path='/' element={< />} /> */} {/* 마감임박 */}

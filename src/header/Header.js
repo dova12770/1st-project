@@ -66,7 +66,7 @@ function Header({ isLoggedIn, setIsLoggedIn }) {
                         {view && <Category />}
                     </li>
                     <li className='hoverName' onClick={() => navigate('/')}>신규</li>
-                    <li className='hoverName' onClick={() => navigate('/Rank')}>인기</li>
+                    <li className='hoverName' onClick={() => navigate('/')}>인기</li>
                     <li className='hoverName' onClick={() => navigate('/')}>공개예정</li>
                     <li className='hoverName' onClick={() => navigate('/')}>마감임박</li>
                 </ul>
