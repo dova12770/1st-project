@@ -1,5 +1,4 @@
 import { useNavigate, useParams } from "react-router-dom";
-import PtcrpgComTop from "../../component/PtcrpgComTop";
 import React, { useState } from "react";
 
 

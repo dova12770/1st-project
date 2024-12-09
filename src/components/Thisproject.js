@@ -7,7 +7,7 @@ function Thisproject(props) {
 
     return (
 
-        <div onClick={()=> Navigate('/Ptcr')}>
+        <div onClick={()=> Navigate('/ptcr')}>
             <div className='maincard'>
                 <img src={props.imgs[props.index]} className='moreimg' /></div>
             <h2 className='linkpointer'>{props.Creatorinfo[props.index].title}</h2>

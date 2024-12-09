@@ -5,19 +5,18 @@
     box-sizing: border-box;
 }
 
-.outerContainer {
+.outerContainerPP {
     margin: auto;
-    height: 750px;
+    height: auto;
     width: 97vw;
+    margin-top: -70px;
+    margin-bottom: -30px;
 }
 
 .containerPP {
     width: 100%; /* 컨테이너의 너비를 400px로 고정 */
     height: 90vh;
     margin: 50px auto; /* 컨테이너를 화면 중앙에 정렬 */
-    border: 1px solid #ddd; 
-    border-radius: 10px; 
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
     background-color: #ffffff; 
     overflow: hidden; /* 내부 요소가 컨테이너를 넘치지 않도록 설정 */
     /* 수직정렬 */
@@ -85,6 +84,7 @@
     width: 45%;
     height: 500px;
     padding: 20px;
+    margin-left: 30px;
 }
 .introRight1 {    /* 현황정보 실선기준 위쪽 */
     width: 100%;
