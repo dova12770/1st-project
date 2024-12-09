@@ -43,16 +43,16 @@ function Header({ isLoggedIn, setIsLoggedIn }) {
                         }
                     }}>
                         {isLoggedIn ? "마이페이지 " : "로그인/회원가입"}
-                        <FaPowerOff
-                            className='logout_btn'
-                            onClick={(event) => {
-                                event.stopPropagation();
-                                if (window.confirm('로그아웃하시겠습니까?')) {
-                                    setIsLoggedIn(false);
-                                    navigate('/');
-                                }
-                            }}
+                        {isLoggedIn &&(
+                        <FaPowerOff className='logout_btn' onClick={(event) => {
+                            event.stopPropagation();
+                            if (window.confirm('로그아웃하시겠습니까?')) {
+                                setIsLoggedIn(false);
+                                navigate('/');
+                            }
+                        }}
                         />
+                    )}
                     </div>
                 </div>
             </div>
@@ -65,10 +65,10 @@ function Header({ isLoggedIn, setIsLoggedIn }) {
                         <CgList /> 카테고리
                         {view && <Category />}
                     </li>
-                    <li className='hoverName'  onClick={() => navigate('/')}>신규</li>
-                    <li className='hoverName'  onClick={() => navigate('/Rank')}>인기</li>
-                    <li className='hoverName'  onClick={() => navigate('/')}>공개예정</li>
-                    <li className='hoverName'  onClick={() => navigate('/')}>마감임박</li>
+                    <li className='hoverName' onClick={() => navigate('/')}>신규</li>
+                    <li className='hoverName' onClick={() => navigate('/Rank')}>인기</li>
+                    <li className='hoverName' onClick={() => navigate('/')}>공개예정</li>
+                    <li className='hoverName' onClick={() => navigate('/')}>마감임박</li>
                 </ul>
             </div>
 
