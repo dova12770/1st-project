@@ -11,14 +11,20 @@
     width: 97vw;
 }
 
-.container {    /* 정보표시컨테이너 박스 */
-    margin: auto;
-    margin-top: 50px;
-    width: 100%;
-
-    background-color: white;
-    display: flex;
-    flex-direction: column;
+.container {
+    width: 100%; /* 컨테이너의 너비를 400px로 고정 */
+    height: 90vh;
+    margin: 50px auto; /* 컨테이너를 화면 중앙에 정렬 */
+    border: 1px solid #ddd; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+    background-color: #ffffff; 
+    overflow: hidden; /* 내부 요소가 컨테이너를 넘치지 않도록 설정 */
+    /* 수직정렬 */
+    display : flex;
+    justify-content :center;
+    align-items: center;  
+    flex-direction: column; 
 }
 
 .mainTitle {   /* 상품 제목 타이틀 위치 가운데정렬 */

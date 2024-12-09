@@ -13,14 +13,12 @@ function Category() {
     return (
         <div className='dropdown_menu'>
             <li className='caList'><CgMicrosoft /> 전체</li>
-            <li className='caList'><IoFastFoodOutline /> 푸드</li>
-            <li className='caList'><CgNotes /> 출판</li>
-            <li className='caList'><IoShirtOutline /> 의류</li>
-            <li className='caList'><CgBot /> 테크</li>
-            <li className='caList'><RiSofaLine /> 리빙</li>
-            <li className='caList'><CgGames /> 게임</li>
-            <li className='caList'><FaRegGem /> 주얼리</li>
-            <li className='caList'><LiaStoreAltSolid /> 잡화</li>
+            <li className='caList'><IoFastFoodOutline /> 화재</li>
+            <li className='caList'><CgNotes /> 태풍/호우</li>
+            <li className='caList'><IoShirtOutline /> 지진</li>
+            <li className='caList'><CgBot /> 대설/한파</li>
+            <li className='caList'><RiSofaLine /> 폭염</li>
+            <li className='caList'><CgGames /> 전염병</li>
         </div>
     )
 }
