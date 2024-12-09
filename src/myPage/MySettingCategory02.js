@@ -64,10 +64,6 @@ function MySettingCategory02({ prof }) {
             <div className="profBox">
                 <p className="prof">프로필사진</p>
                 <div>
-<<<<<<< HEAD
-                <p className="prof">이름</p>
-                <div>{prof[0].userName}</div>
-=======
                     {editingField !== "photo" && (
                         <button
                             className="my_btn"
@@ -93,7 +89,6 @@ function MySettingCategory02({ prof }) {
                             </button>
                         </div>
                     )}
->>>>>>> f829ca6f5569b560a77adc0273030a0364f04f61
                 </div>
             </div>
 
