@@ -12,20 +12,26 @@ import HeaderTotal from './HeaderTotal';
 import LoginPage from '../pages/LoginPage';
 import SignupPage from '../pages/SignupPage';
 import InterestPage from '../pages/InterestPage';
+import HotCatecoryPage from '../pages/CategoryPages/HotCategoryPage';
+import NewCatecoryPage from '../pages/CategoryPages/NewCategoryPage';
+import OpenStandBy from '../pages/CategoryPages/OpenStandBy';
 
 function Merge() {
     return (
         <Router>
             <div className="merge-container">
                 <Header />
+                {/* <HotCatecoryPage/> */}
+                {/* <NewCatecoryPage/> */}
+                <OpenStandBy/>
                 <Routes>
-                    <Route path='/' element={<Body />} />
+                    {/* <Route path='/' element={<Body />} />
                     <Route path='/ptcr' element={<PtcrTotal />} />                   
                     <Route path='/login' element={<LoginPage />} />
                     <Route path='/mypage' element={<MyPage />} />
                     <Route path='/mysetting' element={<MySetting />} />
                     <Route path='/signup' element={<SignupPage />} />
-                    <Route path='/interest' element={< InterestPage/>} />
+                    <Route path='/interest' element={< InterestPage/>} /> */}
                                 {/* <PtcrTotal />
                                 <HeaderTotal />
                                 <MyPage />
