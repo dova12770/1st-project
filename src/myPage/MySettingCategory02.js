@@ -13,7 +13,7 @@ function MySettingCategory02({ prof }) {
             <div className='profBox'>
                 <div>
                 <p className="prof">이름</p>
-                <div>{prof[0].name}</div>
+                <div>{prof[0].userName}</div>
                 </div>
                 <button className="my_btn" >변경</button>
             </div>
