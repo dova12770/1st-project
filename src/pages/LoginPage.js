@@ -25,7 +25,7 @@ function LoginPage({setIsLoggedIn}){
     const location = useLocation();
 
     //signupPage에서 전달된 userList 받기
-    const userList = location.state?.UserInfo || [];
+    const userList = location.state?.userList || UserInfo; // location.state가 없으면 UserInfo 참조
 
     //모달 상태 저장 useState 변수
     const [isModalOpen, setIsModalOpen] = useState(false); 
@@ -134,7 +134,8 @@ function LoginPage({setIsLoggedIn}){
                     </div>
                     <br/>
                     <div className='body_bottom'>
-                        <p style={{cursor: 'pointer'}} onClick={()=>{// md_find 모달창 열기
+                        <p style={{fontWeight : 'bold' ,cursor: 'pointer'}} onClick={(e)=>{// md_find 모달창 열기
+                            e.preventDefault();
                             setIsModalOpen(true);
                             modalOpen(isModalOpen);
                         }}>비밀번호 찾기</p>
@@ -153,8 +154,9 @@ function LoginPage({setIsLoggedIn}){
                     <form id='frm_find'>
                         <input className='input_find' value={inputFindId} placeholder='아이디를 입력하세요'
                                 onChange={(e) => setInputFindId(e.target.value)}></input>
-                        <button className='btn_find' onClick={()=>{
+                        <button className='btn_find' onClick={(e)=>{
                             //입력받은 id가  userList에 있는지 확인
+                            e.preventDefault(); // 기본 동작 방지
                             const matchedUser = userList.find( (user) => user.userId === inputFindId.trim() );
                             if (matchedUser) {
                                 alert(`비밀번호 =${matchedUser.userPassword}`);

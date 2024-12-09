@@ -125,15 +125,23 @@ li {
 
 /* 알림창 */
 .notification_box {
-    position: fixed;
-    top: 5rem; /* 화면에서 보이게 조정 */
-    right: 3rem;
-    width: 400px;
-    height: 400px;
+    position: absolute;
+    top: 8%; /* 화면에서 보이게 조정 */
+    right: 5%;
+    width: 30%;
+    height: 40%;
     background-color: #fafad1;
     border-radius: 10px;
     padding: 20px;
     z-index: 1000;
+}
+
+.notification_list{
+    background-color: #fafad1;
+}
+
+.notification_box h3{
+    background-color: #fafad1;
 }
 
 /* 닫기 버튼 */
@@ -194,9 +202,10 @@ li {
 
 /* 모두 읽음 버튼 */
 .deleteAll {
+    position: absolute;
     width: 90%;
     height: 40px;
-    bottom: 20px;
+    bottom: 30px;
     left: 20px;
     background-color: #F08080;
     color: white;
