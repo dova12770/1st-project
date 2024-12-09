@@ -1,11 +1,9 @@
 import React from 'react';
 import Header from "../header/Header";
-import Footer from "../footer/Footer";
 import './Merge.css';
 import Body from '../pages/Body';
 import MyPage from '../myPage/MyPage';
 import MySetting from '../myPage/MySetting';
-import PtcrTotal from './PtcrTotal';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import MainFooter from '../footer/MainFooter';
 import HeaderTotal from './HeaderTotal';
@@ -17,12 +15,17 @@ import Rank from '../pages/Rank';
 import PlanPage from '../particularpage/pages/PlanPage';
 import ScrollToTop from './ScrollToTop';
 import Datas from '../particularpage/data/Datas';
+import Ptcrpg from '../particularpage/Ptcrpg';
+import UpdatePage from '../particularpage/pages/UpdatePage';
+import CommuPage from '../particularpage/pages/CommuPage';
+import ReviewPage from '../particularpage/pages/ReviewPage';
 
 function Merge() {
     const [isLoggedIn, setIsLoggedIn] = useState(false);
 
     return (
         <Router>
+            <ScrollToTop />
             <div className="merge-container">
                 <Header isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} />
                 <Routes>
