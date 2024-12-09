@@ -13,6 +13,7 @@ import LoginPage from '../pages/LoginPage';
 import SignupPage from '../pages/SignupPage';
 import InterestPage from '../pages/InterestPage';
 import { useState } from 'react';
+import Rank from '../pages/Rank';
 
 function Merge() {
     const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -24,11 +25,16 @@ function Merge() {
                 <Routes>
                     <Route path='/' element={<Body />} />
                     <Route path='/ptcr' element={<PtcrTotal />} />                   
-                    <Route path='/login' element={<LoginPage setIsLoggedIn={setIsLoggedIn}/>} />
-                    <Route path='/mypage' element={<MyPage />} />
+                    <Route path='/login' element={<LoginPage setIsLoggedIn={setIsLoggedIn}/>} /> {/* 로그인 */}
+                    <Route path="/signup" element={<SignupPage />} /> {/* 회원가입 */}
+                    <Route path='/mypage' element={<MyPage />} /> {/* 마이페이지 */}
                     <Route path='/mysetting' element={<MySetting />} />
-                    <Route path='/signup' element={<SignupPage />} />
-                    <Route path='/interest' element={< InterestPage/>} />
+                    <Route path="/interest" element={<InterestPage />} /> {/* 선호 */}
+                    <Route path='/rank' element={< Rank/>} /> {/* 인기 */}
+
+                    {/*<Route path='/' element={< />} /> */} {/* 신규 */}
+                    {/*<Route path='/' element={< />} /> */} {/* 공개예정 */}
+                    {/*<Route path='/' element={< />} /> */} {/* 마감임박 */}
                 </Routes>
                 <MainFooter />
             </div>
