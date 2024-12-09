@@ -5,9 +5,6 @@ import InterestData from '../data/InterestData';
 import InterestComponent from '../components/InterestComponent';
 import AlarmData from '../data/AlarmData';
 import AlarmComponent from '../components/AlarmComponent';
-import Footer from '../footer/Footer';
-import Header from '../header/Header';
-
 function InterestPage(){
 
     //관심목록을 저장할 useState 변수
@@ -22,6 +19,8 @@ function InterestPage(){
     // 알람신청 nav 클릭 상태 관리
     const [showAlarm, setShowAlarm] = useState(false);
 
+    
+
     //관심목록을 지울 함수
     const onDelete = (id) =>{
         const deleteHeart = interest.filter( (value) => value.id !== id );
@@ -31,7 +30,6 @@ function InterestPage(){
         const deleteAlarm = alarm.filter( (value) => value.id !== id );
         setAlarm(deleteAlarm);
     }
-    
 
     return(
         <div>
@@ -41,10 +39,12 @@ function InterestPage(){
                     <div className='top_body'>
                         <div className='l_body' onClick={()=>{ setShowLike((showLike) => { 
                                 setShowAlarm(false); //알림신청 초기화
-                                return !showLike;}) }}> 좋아한 {interest.length}</div> {/* 좋아한 부분 보이기 */}
+                                return !showLike;}) }} 
+                                style={{ fontWeight: showLike ? 'bold' : 'normal', color: showLike ? 'black' : 'gray' }}> 좋아한 {interest.length}</div> {/* 좋아한 부분 보이고 글씨 검정 진하게 */}
                         <div className='r_body' onClick={()=>{ setShowAlarm((showAlarm) => {
                                 setShowLike(false);  //좋아한 초기화
-                                return !showAlarm;}) }}> 알림신청 {alarm.length}</div> {/* 알림신청 부분 보이기 */}
+                                return !showAlarm;}) }}
+                                style={{ fontWeight: showAlarm ? 'bold' : 'normal', color: showAlarm ? 'black' : 'gray' }}> 알림신청 {alarm.length}</div> {/* 알림신청 부분 보이고 글씨 검정 진하게 */}
                     </div>
                     { //좋아한 부분 내용
                         showLike && (
