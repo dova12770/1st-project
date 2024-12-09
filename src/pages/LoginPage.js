@@ -3,7 +3,6 @@ import { useState , useRef } from 'react';
 import { useNavigate, useLocation  } from 'react-router-dom'; //navigate와 useLocation으로 컴포넌트 간 상태 전달
 import Body from './Body';
 import UserInfo from '../data/UserInfo';
-import MyPage from '../myPage/MyPage';
 
 function LoginPage(){
 
@@ -26,7 +25,7 @@ function LoginPage(){
     const location = useLocation();
 
     //signupPage에서 전달된 userList 받기
-    const userList = location.state?.userList || [];
+    const userList = location.state?.UserInfo || [];
 
     //모달 상태 저장 useState 변수
     const [isModalOpen, setIsModalOpen] = useState(false); 
@@ -50,7 +49,7 @@ function LoginPage(){
         event.preventDefault();
 
         //입력받은 id, pw가  userList에 있는지 확인
-        const matchedUser = userList.find(
+        const matchedUser = UserInfo.find(
             (user) => user.userId === inputId.trim() && user.userPassword === inputPw.trim()
         );
 
