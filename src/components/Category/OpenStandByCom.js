@@ -18,7 +18,7 @@ function OpenStandByCom(props){
         </div>
         <div className="OBSAlram">
             <div className="OBSAlraming">N명 알림신청 중</div>
-            <div className="OBSAlramBell"> <BsBellFill /> 이모티콘 알림신청</div>
+            <div className="OBSAlramBell"> <BsBellFill /> 알림신청</div>
         </div>
     </div>
 
