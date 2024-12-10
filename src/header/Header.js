@@ -66,10 +66,10 @@ function Header({ isLoggedIn, setIsLoggedIn }) {
                         <CgList /> 카테고리
                         {view && <Category />}
                     </li>
-                    <li className='hoverName' onClick={() => navigate('/')}>신규</li>
-                    <li className='hoverName' onClick={() => navigate('/')}>인기</li>
-                    <li className='hoverName' onClick={() => navigate('/')}>공개예정</li>
-                    <li className='hoverName' onClick={() => navigate('/')}>마감임박</li>
+                    <li className='hoverName' onClick={() => navigate('/new')}>신규</li>
+                    <li className='hoverName' onClick={() => navigate('/hot')}>인기</li>
+                    <li className='hoverName' onClick={() => navigate('/openstandby')}>공개예정</li>
+                    <li className='hoverName' onClick={() => navigate('/closestandby')}>마감임박</li>
                 </ul>
             </div>
 

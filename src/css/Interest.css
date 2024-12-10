@@ -4,7 +4,8 @@
     box-sizing: border-box;
 }
 .interest_container{
-    height: 100vh;
+    display: flex;
+    position: relative;
 }
 .interest_body{
     width: 100%;

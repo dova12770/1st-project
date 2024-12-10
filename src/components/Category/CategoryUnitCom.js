@@ -1,8 +1,11 @@
+import { useNavigate } from 'react-router-dom';
 import '../../css/CategoryPages/HotCatecoryPage.css';
 import { FaBell } from "react-icons/fa6";
+import Datas from '../../particularpage/data/Datas';
 
 
 function CategoryUnitCom(props) {
+    const Navigate = useNavigate();
 
     return (
 
@@ -10,7 +13,7 @@ function CategoryUnitCom(props) {
                 {/* 제품설명 전체 영역 */}
                 <div className="HCPInnerContainer">
                     {/* 제품설명  영역 */}
-                    <div className="HCPHotSell">
+                    <div className="HCPHotSell" onClick={()=>Navigate('/ptcr/' + Datas[props.index].idDT)}>
                         <div className="HCPInnerName">{props.stating[props.index].state}</div>
                         {/* 제품 상세 영역 */}
                         <img src={props.stating[props.index].MainImg} className="HCPInnerImg" />

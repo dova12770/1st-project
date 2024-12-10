@@ -14,7 +14,7 @@ function InterestPage(){
     const [alarm, setAlarm] = useState(AlarmData);
 
     // 좋아한 nav 클릭 상태 관리
-    const [showLike, setShowLike] = useState(false);
+    const [showLike, setShowLike] = useState(true);
 
     // 알람신청 nav 클릭 상태 관리
     const [showAlarm, setShowAlarm] = useState(false);

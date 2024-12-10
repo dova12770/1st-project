@@ -7,7 +7,7 @@ function TopDown() {
     useEffect(() => {
         const handleScroll = () => {
             const td_btn = document.getElementsByClassName('td_btn')[0];
-            if (document.documentElement.scrollTop > 1000) {
+            if (document.documentElement.scrollTop > 900) {
                 td_btn.style.opacity = '1';
             } else {
                 td_btn.style.opacity = '0';

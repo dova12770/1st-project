@@ -1,13 +1,16 @@
 import '../../css/CategoryPages/OpenStandBy.css';
 import { BsBellFill } from "react-icons/bs";
-
+import Datas from '../../particularpage/data/Datas';
+import { useNavigate } from 'react-router-dom';
 
 
 function OpenStandByCom(props){
 
+    const Navigate = useNavigate();
+
     return(<div className="OBSCardSlot">
-        <div className="OBSCardImgBox"> <img className="OBSCardImg" src={props.OpenComponent[props.index].OBSImage}/> </div>
-        <div className="OBSCardDetailCon">
+        <div className="OBSCardImgBox" onClick={()=>Navigate('/ptcr/' + Datas[props.index].idDT)}> <img className="OBSCardImg" src={props.OpenComponent[props.index].OBSImage}/> </div>
+        <div className="OBSCardDetailCon"  onClick={()=>Navigate('/ptcr/' + Datas[props.index].idDT)}>
             <div className="OBSCardDetailCompany">{props.OpenComponent[props.index].OBSCompany}</div>
             <div className="OBSCardDetailTitle">{props.OpenComponent[props.index].OBSTitle}</div>
             <div className="OBSCardDetailDetail">{props.OpenComponent[props.index].OBSDetail}</div>
