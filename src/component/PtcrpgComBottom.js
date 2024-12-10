@@ -27,6 +27,12 @@ function PtcrpgComBottom(props) {
                         <div className='expnBody'><img src={props.data[0].userImagesDT[1]} width={630} /></div>
                         <div className='expnBody'>{props.data[0].userTextDT[1]}</div>
                         <div className='expnBody'><img src={props.data[0].userImagesDT[2]} width={630} /></div>
+                        <div className='expnBody'>{props.data[0].userTextDT[2]}</div>
+                        <div className='expnBody'><img src={props.data[0].userImagesDT[3]} width={630} /></div>
+                        <div className='expnBody'>{props.data[0].userTextDT[3]}</div>
+                        <div className='expnBody'><img src={props.data[0].userImagesDT[4]} width={630} /></div>
+                        <div className='expnBody'>{props.data[0].userTextDT[4]}</div>
+                        <div className='expnBody'><img src='/images/배송교환환불.jpg' width={630} /></div>
 
                         <div className='noticeText1'>
                             <div className='noticeTitle'><CgShapeTriangle style={{ fontSize: '18px' }} />신뢰와 안전</div>
