@@ -4,11 +4,9 @@ import '../css/MySettingCss.css';
 import MySettingCategory01 from "./MySettingCategory01";
 import MySettingCategory02 from "./MySettingCategory02";
 import DeliveryAddress from "./DeliveryAddress";
-import profDate from '../data/profDate';
 import Alarm from "./Alarm";
 import Pay from "./Pay";
 import Account from "./Account";
-import accountDate from "../data/AccountDate";
 import UserInfo from "../data/UserInfo";
 
 function MySetting() {

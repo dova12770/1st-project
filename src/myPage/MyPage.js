@@ -11,7 +11,6 @@ function MyPage() {
     const [selectedIndex, setSelectedIndex] = useState(0);
     const navigate = useNavigate();
 
-
     return (
         <div className='MyPage_Container'>
             <div className='Prof_Container'>

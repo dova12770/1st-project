@@ -37,6 +37,7 @@
 }
 
 .modalButtons button {
+    width: auto;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
@@ -44,12 +45,12 @@
 }
 
 .modalButtons button:first-child {
-    background: #868585;
+    background: #f08080;
+    color: white;
 }
 
 .modalButtons button:last-child {
-    background: #f08080;
-    color: white;
+    background: lightgray;
 }
 
 
