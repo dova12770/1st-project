@@ -3,6 +3,7 @@ import { useNavigate, useParams } from "react-router-dom";
 import '../particularpage/Ptcrpg2.css';
 import { CgShapeTriangle } from "react-icons/cg";
 import PtcrpgExpnRightCom from './PtcrpgExpnRightCom';
+import Datas from "../particularpage/data/Datas";
 
 
 function PtcrpgComBottom(props) {
@@ -13,10 +14,10 @@ function PtcrpgComBottom(props) {
         <>
             <div className='container2'>
                 <div className='ptcrNav'>  {/* 네비바 */}
-                    <div onClick={() => navigate('/planpage')}>프로젝트 계획</div>
-                    <div onClick={() => navigate('/updatepage')}>업데이트</div>
-                    <div onClick={() => navigate('/commupage')}>커뮤니티</div>
-                    <div onClick={() => navigate('/reviewpage')}>후기</div>
+                    <div onClick={() => navigate('/planpage/' + props.id, { state: { id: props.id } })}>프로젝트 계획</div>
+                    <div onClick={() => navigate('/updatepage/' + props.id, { state: { id: props.id } })}>업데이트</div>
+                    <div onClick={() => navigate('/commupage/' + props.id, { state: { id: props.id } })}>커뮤니티</div>
+                    <div onClick={() => navigate('/reviewpage/' + props.id, { state: { id: props.id } })}>후기</div>
                 </div>
                 <div className='expn'>  {/* 상품설명창 */}
                     <div className='expnLeft'>  {/* 이미지및상품소개 박스 */}
@@ -62,7 +63,7 @@ function PtcrpgComBottom(props) {
                             })
                         }
                         <div className="cartSell">
-                        <div className="cart" onClick={()=>{ window.confirm('장바구니에 담았습니다. 장바구니 페이지로 이동하시겠습니까?') }}>장바구니</div><div className="sell">예약하기</div>
+                            <div className="cart" onClick={() => { window.confirm('장바구니에 담았습니다. 장바구니 페이지로 이동하시겠습니까?') }}>장바구니</div><div className="sell">예약하기</div>
                         </div>
                     </div>
                 </div>

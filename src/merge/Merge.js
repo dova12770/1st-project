@@ -40,11 +40,11 @@ function Merge() {
                     <Route path='/openstandby' element={<OpenStandBy/>} />
                     <Route path='/closestandby' element={<CloseStandBy/>} />
                     <Route path='/ptcr/:id' element={<Ptcrpg datas={Datas} />} />
-                    <Route path='/planpage' element={<Ptcrpg datas={Datas} />} />
-                    <Route path='/updatepage' element={<UpdatePage />} />
-                    <Route path='/commupage' element={<CommuPage />} />
-                    <Route path='/reviewpage' element={<ReviewPage />} />
-                    <Route path='/login' element={<LoginPage setIsLoggedIn={setIsLoggedIn} />} /> {/* 로그인 */}
+                    <Route path='/planpage/:id' element={<Ptcrpg datas={Datas} />} />
+                    <Route path='/updatepage/:id' element={<UpdatePage datas={Datas} />} />
+                    <Route path='/commupage/:id' element={<CommuPage datas={Datas} />} />
+                    <Route path='/reviewpage/:id' element={<ReviewPage datas={Datas} />} />                
+                    <Route path='/login' element={<LoginPage setIsLoggedIn={setIsLoggedIn}/>} /> {/* 로그인 */}
                     <Route path="/signup" element={<SignupPage />} /> {/* 회원가입 */}
                     <Route path='/mypage' element={<MyPage isLoggedIn={isLoggedIn} />} /> {/* 마이페이지 */}
                     <Route path='/mysetting' element={<MySetting />} />
