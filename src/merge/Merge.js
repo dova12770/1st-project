@@ -23,7 +23,7 @@ function Merge() {
         <Router>
             <div className="merge-container">
                 <Header />
-                <HotCatecoryPage/>
+                {/* <HotCatecoryPage/> */}
                 {/* <NewCatecoryPage/> */}
                 {/* <OpenStandBy/> */}
                 {/* <CloseStandBy/> */}
