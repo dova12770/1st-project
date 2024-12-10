@@ -1,0 +1,93 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.OBSCon{
+    display: flex;
+    position: relative;
+}
+
+.OSBTitle{
+    margin-top: 50px;
+    margin-left: 30px;
+    display: flex;
+}
+
+.OBSMenuContainer{
+    margin-top: 20px;
+    display: flex;
+    width: auto;
+    height: 700px;
+    flex-wrap: wrap;
+}
+
+.OBSCardSlot{
+    padding: 8px;
+    width: 25%;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.OBSCardImgBox{
+    width: 100%;
+    height: 40%;
+}
+
+.OBSCardImg{
+    width: 100%;
+    height: 250px;
+    border-radius: 10px;
+}
+
+.OBSCardDetailCon{
+    width: 100%;
+    height: 150px;
+}
+
+.OBSCardDetailCompany{
+    width: 100%;
+    margin: 5px;
+    color: gray;
+    font-size: small;
+}
+
+.OBSCardDetailTitle{
+    width: 100%;
+    margin: 5px;
+    color: black;
+    font-size: large;
+    font-weight: bold;
+}
+
+.OBSCardDetailDetail{
+    width: 100%;
+    margin: 5px;
+    color: gray;
+    height: 100px;
+    font-size: small;
+    
+}
+
+.OBSAlraming{
+    color: #F08080;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.OBSAlramBell{
+    text-align: center;
+    align-content: center;
+    color: #F08080;
+    border : 3px solid #F08080;
+    height: 50px;
+    border-radius: 10px;
+    font-size: large;
+    font-weight: 550;
+}

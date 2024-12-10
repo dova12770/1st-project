@@ -10,6 +10,11 @@ import HeaderTotal from './HeaderTotal';
 import LoginPage from '../pages/LoginPage';
 import SignupPage from '../pages/SignupPage';
 import InterestPage from '../pages/InterestPage';
+import HotCatecoryPage from '../pages/CategoryPages/HotCategoryPage';
+import NewCatecoryPage from '../pages/CategoryPages/NewCategoryPage';
+import OpenStandBy from '../pages/CategoryPages/OpenStandBy';
+import CloseStandBy from '../pages/CategoryPages/CloseStandBy';
+
 import { useState } from 'react';
 import Rank from '../pages/Rank';
 import PlanPage from '../particularpage/pages/PlanPage';
@@ -27,6 +32,23 @@ function Merge() {
         <Router>
             <ScrollToTop />
             <div className="merge-container">
+                {/* <Header /> */}
+                {/* <HotCatecoryPage/> */}
+                {/* <NewCatecoryPage/> */}
+                {/* <OpenStandBy/> */}
+                {/* <CloseStandBy/> */}
+                    {/* <Route path='/' element={<Body />} />
+                    <Route path='/ptcr' element={<PtcrTotal />} />                   
+                    <Route path='/login' element={<LoginPage />} />
+                    <Route path='/mypage' element={<MyPage />} />
+                    <Route path='/mysetting' element={<MySetting />} />
+                    <Route path='/signup' element={<SignupPage />} />
+                    <Route path='/interest' element={< InterestPage/>} /> */}
+                                {/* <PtcrTotal />
+                                <HeaderTotal />
+                                <MyPage />
+                                <MySetting />
+                                <Body /> */}
                 <Header isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} />
                 <Routes>
                     <Route path='/' element={<Body isLoggedIn={isLoggedIn}/>} />                  
