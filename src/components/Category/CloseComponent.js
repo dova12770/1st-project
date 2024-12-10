@@ -11,7 +11,7 @@ const CloseComponent =[
     {
         id : '2',
         OBSImage:'images/지진대피 방재모자.jpg',
-        OBSCompany : '팡팡 컴패니',
+        OBSCompany : '팡팡컴패니',
         OBSTitle: '지진대피 방재모자',
         OBSDetail:'갑작스러운 지진낙하물로 부터 머리를 보호해 줍니다!'
     },
