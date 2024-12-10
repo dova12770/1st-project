@@ -1,19 +1,21 @@
-import { useNavigate, useParams } from "react-router-dom";
+import { useLocation, useNavigate, useParams } from "react-router-dom";
 import React, { useState } from "react";
 
 
 function UpdatePage() {
     const navigate = useNavigate();
+    const location = useLocation();
+    const id = location.state?.id;
 
     return (
         <>
             <div className='ptcrNav'>  {/* 네비바 */}
-                <div onClick={() => navigate('/planpage')}>프로젝트 계획</div>
-                <div onClick={() => navigate('/updatepage')}>업데이트</div>
-                <div onClick={() => navigate('/commupage')}>커뮤니티</div>
-                <div onClick={() => navigate('/reviewpage')}>후기</div>
+                <div onClick={() => navigate('/planpage/' + id, { state: { id: id } })}>프로젝트 계획</div>
+                <div onClick={() => navigate('/updatepage/' + id, { state: { id: id } })}>업데이트</div>
+                <div onClick={() => navigate('/commupage/' + id, { state: { id: id } })}>커뮤니티</div>
+                <div onClick={() => navigate('/reviewpage/' + id, { state: { id: id } })}>후기</div>
             </div>
-            <h1 style={{ textAlign: 'center', marginTop:'50px' }}>업데이트 내역이 없습니다.</h1>
+            <h1 style={{ textAlign: 'center', marginTop: '50px' }}>업데이트 내역이 없습니다.</h1>
         </>
     )
 }

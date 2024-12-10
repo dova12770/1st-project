@@ -3,15 +3,14 @@ import PtcrpgComTop from '../component/PtcrpgComTop';
 import PtcrpgComBottom from '../component/PtcrpgComBottom';
 import Datas from './data/Datas';
 import { useParams } from 'react-router-dom';
+import ReviewComment from '../component/ReviewComment';
 
 function Ptcrpg() {
 
     let { id } = useParams();
-    console.log(id);
 
     const [datasDT, setDatasDT] = useState(Datas);
     const data = datasDT.filter(data => data.idDT === id); //연결된 컴포넌트에 아이디값만 변경하면 사진,내용 자동으로 바뀜
-
 
     const getMainTainLikeCnt = () => Number(localStorage.getItem('likeCnt')) || 0;  // 좋아요버튼 공유버튼 새로고침해도 유지 시작
     const getMainTainShareCnt = () => Number(localStorage.getItem('shareCnt')) || 0;
@@ -34,6 +33,8 @@ function Ptcrpg() {
 
     let [cntImg2, setCntImg2] = useState(0);
 
+    
+
 
 
     return (
@@ -51,6 +52,7 @@ function Ptcrpg() {
             <PtcrpgComBottom
                 datasDT={datasDT}
                 data={data}
+                id={id}
             />
         </div>
     );
