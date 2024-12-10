@@ -201,19 +201,19 @@ let Datas = [
         userPriceTextDT: ['XS 사이즈', 'S 사이즈', 'M 사이즈', 'L  사이즈', 'XL 사이즈'],
 
         imagesDT: [
-            process.env.PUBLIC_URL + '/images/부착식소화기.jpg',
             process.env.PUBLIC_URL + '/images/부착식소화기1.jpg',
+            process.env.PUBLIC_URL + '/images/부착식소화기.jpg',
             process.env.PUBLIC_URL + '/images/부착식소화기2.jpg'
         ],
 
         userImagesDT: [
-            process.env.PUBLIC_URL + '/images/부착식소화기.jpg',
             process.env.PUBLIC_URL + '/images/부착식소화기1.jpg',
+            process.env.PUBLIC_URL + '/images/부착식소화기.jpg',
             process.env.PUBLIC_URL + '/images/부착식소화기2.jpg'
         ],
         userTextDT: [
-            '어디든 부착가능한 초소형 크기!',
             '크기별로 선택가능!',
+            '어디든 부착가능한 초소형 크기!',
             '누구든 설치할수있는 간편한 부착!'
         ],
         userNameDT: ['김이름3', '이이름3', '박이름3', '최이름3'],

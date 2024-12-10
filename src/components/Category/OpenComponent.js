@@ -17,7 +17,7 @@ const OpenComponent =[
     },
     {
         id : '3',
-        OBSImage:'images/재난생존가방1.jpg',
+        OBSImage:'images/생존가방1.jpg',
         OBSCompany : '스타크래프트 컴패니',
         OBSTitle: '독성물질 감지 및 경보기',
         OBSDetail:'기기 근처 공기에서 독성 물질이 감지 될 경우 발광하며, 버튼을 누를 경우 소리를 내서 알려줍니다.'

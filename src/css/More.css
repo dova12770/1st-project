@@ -18,6 +18,7 @@
 
 .cardcontainer{
     margin: 0 auto ;
+    margin-top: 20px;
     padding: 0px;
     display: flex;
     flex-direction: row;
@@ -56,8 +57,20 @@
 .subtitle{
     width: 150px;
     text-overflow: clip;
+    font-size: small;
+    color: rgb(50, 50, 50);
 }
 .linkpointer{
     cursor: pointer;
 }
 
+.CardSlot{
+    display: flex;
+    position: relative;
+    height: 350px;
+    flex-direction: column;
+}
+
+.tagtitle{
+    color: gray;
+}

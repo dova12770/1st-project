@@ -17,7 +17,7 @@ const CloseComponent =[
     },
     {
         id : '3',
-        OBSImage:'images/재난생존가방1.jpg',
+        OBSImage:'images/생존가방1.jpg',
         OBSCompany : '화수증기 컴패니',
         OBSTitle: '증발 방수기',
         OBSDetail:'고온의 열선을 깔아서 물이 닿자마자 증발로 이어지게 합니다.'
