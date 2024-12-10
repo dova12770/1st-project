@@ -3,58 +3,58 @@ let InterestData = [
     {   
         userId : 'aaaa',
         id : 'i001',
-        image : "Cake",
-        brand : "당보충 초코 케이크1",
-        title : 1000,
-        content: '/image/food1.jpg'
+        image : 'images/구급가방.jpg',
+        brand : "SG 생활건강",
+        title : "방독면",
+        content: "두건형 방독면"
     },
     
     {
         userId : 'aaaa',
         id : 'i002',
-        image : "Cake",
-        brand : "당보충 초코 케이크2",
-        title : 2000,
-        content: '/image/food2.jpg'
+        image : 'images/부착식소화기.jpg',
+        brand : "SG 생활건강",
+        title : "부착식 소화기",
+        content: '어디든 부착가능 소형 소화기'
     },
     
     {
         userId : 'aaaa',
         id : 'i003',
-        image : "Cake",
-        brand : "당보충 초코 케이크3",
-        title : 3000,
-        content: '/image/food3.jpg'
+        image : 'images/방염담요1.jpg',
+        brand : "InterGreen",
+        title : "방염담요",
+        content: '전문 진화대 장비'
     }
     ,
     
     {
         userId : 'aaaa',
         id : 'i004',
-        image : "Cake",
-        brand : "당보충 초코 케이크4",
-        title : 4000,
-        content: '/image/food4.jpg'
+        image : 'images/생존가방.jpg',
+        brand : "Gaja",
+        title : "재난생존가방",
+        content: '재난/재해 대비 생존가방'
     }
     ,
     
     {
-        userId : 'aaaa',
+        userId : 'bbbb',
         id : 'i005',
-        image : "Cake",
-        brand : "당보충 초코 케이크5",
-        title : 5000,
-        content: '/image/food5.jpg'
+        image : 'images/생존가방.jpg',
+        brand : "Gaja",
+        title : "재난생존가방",
+        content: '재난/재해 대비 생존가방'
     }
     ,
 
     {
         userId : 'bbbb',
         id : 'i006',
-        image : "Cake",
-        brand : "당보충 초코 케이크6",
-        title : 5000,
-        content: '/image/food6.jpg'
+        image : 'images/차수문.jpg',
+        brand : "SG 생활건강",
+        title : "차수문",
+        content: '내구성 강한 티타늄 재질 차수문'
     }
 ] ;
     
