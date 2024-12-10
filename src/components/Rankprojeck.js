@@ -1,11 +1,15 @@
+import { Navigate, useNavigate } from 'react-router-dom';
 import '../css/Rank.css';
+import Datas from '../particularpage/data/Datas';
 
 function Rankprojeck(props){
+
+    const Navigate = useNavigate();
 
 
     return (
         <div>
-            <div className="toprank numBer">
+            <div className="toprank numBer" onClick={()=>Navigate('/ptcr/' + Datas[props.index].idDT)}>
                 <div><img src={props.imgs[props.index]} className='topimg' /> </div>
                 <div><h4 className='ranknum'>{props.item}</h4></div>
                 <div>

@@ -7,6 +7,7 @@ import PlanPage from "../particularpage/pages/PlanPage";
 import UpdatePage from "../particularpage/pages/UpdatePage";
 import CommuPage from "../particularpage/pages/CommuPage";
 import ReviewPage from "../particularpage/pages/ReviewPage";
+import Datas from "../particularpage/data/Datas";
 
 
 function PtcrTotal() {
@@ -15,7 +16,7 @@ function PtcrTotal() {
         <>
             <Routes>
                 <Route path="/" element={<Ptcrpg />} />
-                <Route path='/planpage' element={<Ptcrpg />} />
+                <Route path='/planpage/:id' element={<Ptcrpg datas={Datas} />} />
                 <Route path='/updatepage' element={<UpdatePage />} />
                 <Route path='/commupage' element={<CommuPage />} />
                 <Route path='/reviewpage' element={<ReviewPage />} />

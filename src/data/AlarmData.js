@@ -1,6 +1,7 @@
 
 let AlarmData = [
     {
+        userId : 'aaaa',
         id : 'i001',
         image : "Cake",
         brand : "당보충 초코 케이크1",
@@ -9,6 +10,7 @@ let AlarmData = [
     },
     
     {
+        userId : 'aaaa',
         id : 'i002',
         image : "Cake",
         brand : "당보충 초코 케이크2",
@@ -17,6 +19,7 @@ let AlarmData = [
     },
     
     {
+        userId : 'aaaa',
         id : 'i003',
         image : "Cake",
         brand : "당보충 초코 케이크3",
@@ -26,6 +29,7 @@ let AlarmData = [
     ,
     
     {
+        userId : 'aaaa',
         id : 'i004',
         image : "Cake",
         brand : "당보충 초코 케이크4",
@@ -35,6 +39,17 @@ let AlarmData = [
     ,
     
     {
+        userId : 'aaaa',
+        id : 'i005',
+        image : "Cake",
+        brand : "당보충 초코 케이크5",
+        title : 5000,
+        content: '/image/food5.jpg'
+    }
+    ,
+    
+    {
+        userId : 'bbbb',
         id : 'i005',
         image : "Cake",
         brand : "당보충 초코 케이크5",

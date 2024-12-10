@@ -1,11 +1,9 @@
 import React from 'react';
 import Header from "../header/Header";
-import Footer from "../footer/Footer";
 import './Merge.css';
 import Body from '../pages/Body';
 import MyPage from '../myPage/MyPage';
 import MySetting from '../myPage/MySetting';
-import PtcrTotal from './PtcrTotal';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import MainFooter from '../footer/MainFooter';
 import HeaderTotal from './HeaderTotal';
@@ -17,17 +15,28 @@ import NewCatecoryPage from '../pages/CategoryPages/NewCategoryPage';
 import OpenStandBy from '../pages/CategoryPages/OpenStandBy';
 import CloseStandBy from '../pages/CategoryPages/CloseStandBy';
 
+import { useState } from 'react';
+import Rank from '../pages/Rank';
+import PlanPage from '../particularpage/pages/PlanPage';
+import ScrollToTop from './ScrollToTop';
+import Datas from '../particularpage/data/Datas';
+import Ptcrpg from '../particularpage/Ptcrpg';
+import UpdatePage from '../particularpage/pages/UpdatePage';
+import CommuPage from '../particularpage/pages/CommuPage';
+import ReviewPage from '../particularpage/pages/ReviewPage';
 
 function Merge() {
+    const [isLoggedIn, setIsLoggedIn] = useState(false);
+
     return (
         <Router>
+            <ScrollToTop />
             <div className="merge-container">
-                <Header />
+                {/* <Header /> */}
                 {/* <HotCatecoryPage/> */}
                 {/* <NewCatecoryPage/> */}
                 {/* <OpenStandBy/> */}
                 {/* <CloseStandBy/> */}
-                <Routes>
                     {/* <Route path='/' element={<Body />} />
                     <Route path='/ptcr' element={<PtcrTotal />} />                   
                     <Route path='/login' element={<LoginPage />} />
@@ -40,6 +49,23 @@ function Merge() {
                                 <MyPage />
                                 <MySetting />
                                 <Body /> */}
+                <Header isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} />
+                <Routes>
+                    <Route path='/' element={<Body isLoggedIn={isLoggedIn}/>} />                  
+                    <Route path='/ptcr/:id' element={<Ptcrpg datas={Datas} />} />
+                    <Route path='/planpage' element={<Ptcrpg datas={Datas} />} />
+                    <Route path='/updatepage' element={<UpdatePage />} />
+                    <Route path='/commupage' element={<CommuPage />} />
+                    <Route path='/reviewpage' element={<ReviewPage />} />                
+                    <Route path='/login' element={<LoginPage setIsLoggedIn={setIsLoggedIn}/>} /> {/* 로그인 */}
+                    <Route path="/signup" element={<SignupPage />} /> {/* 회원가입 */}
+                    <Route path='/mypage' element={<MyPage isLoggedIn={isLoggedIn}/>} /> {/* 마이페이지 */}
+                    <Route path='/mysetting' element={<MySetting />} />
+                    <Route path="/interest" element={<InterestPage isLoggedIn={isLoggedIn}/>} /> {/* 선호 */}
+                    <Route path='/rank' element={< Rank/>} /> {/* 인기 */}
+                    {/*<Route path='/' element={< />} /> */} {/* 신규 */}
+                    {/*<Route path='/' element={< />} /> */} {/* 공개예정 */}
+                    {/*<Route path='/' element={< />} /> */} {/* 마감임박 */}
                 </Routes>
                 <MainFooter />
             </div>

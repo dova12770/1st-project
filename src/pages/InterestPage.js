@@ -5,9 +5,6 @@ import InterestData from '../data/InterestData';
 import InterestComponent from '../components/InterestComponent';
 import AlarmData from '../data/AlarmData';
 import AlarmComponent from '../components/AlarmComponent';
-import Footer from '../footer/Footer';
-import Header from '../header/Header';
-
 function InterestPage(){
 
     //관심목록을 저장할 useState 변수
@@ -22,6 +19,8 @@ function InterestPage(){
     // 알람신청 nav 클릭 상태 관리
     const [showAlarm, setShowAlarm] = useState(false);
 
+    
+
     //관심목록을 지울 함수
     const onDelete = (id) =>{
         const deleteHeart = interest.filter( (value) => value.id !== id );
@@ -31,7 +30,6 @@ function InterestPage(){
         const deleteAlarm = alarm.filter( (value) => value.id !== id );
         setAlarm(deleteAlarm);
     }
-    
 
     return(
         <div>
@@ -41,22 +39,24 @@ function InterestPage(){
                     <div className='top_body'>
                         <div className='l_body' onClick={()=>{ setShowLike((showLike) => { 
                                 setShowAlarm(false); //알림신청 초기화
-                                return !showLike;}) }}> 좋아한 {interest.length}</div> {/* 좋아한 부분 보이기 */}
-                        <div className='r_body' onClick={()=>{ setShowAlarm((showAlarm) => {
+                                return !showLike;}) }} 
+                                style={{ fontWeight: showLike ? 'bold' : 'normal', color: showLike ? 'black' : 'gray' }}> 좋아한 {interest.filter(value => value.userId === 'aaaa').length}</div> {/* user id == aaaa 가 좋아한 부분 보이고 글씨 검정 진하게 */}
+                        <div className='r_body' onClick={()=>{ setShowAlarm((showLike) => {
                                 setShowLike(false);  //좋아한 초기화
-                                return !showAlarm;}) }}> 알림신청 {alarm.length}</div> {/* 알림신청 부분 보이기 */}
+                                return !showAlarm;}) }}
+                                style={{ fontWeight: showAlarm ? 'bold' : 'normal', color: showAlarm ? 'black' : 'gray' }}> 알림신청 {alarm.filter(value => value.userId === 'aaaa').length}</div> {/* user id == aaaa 가 알림신청 부분 보이고 글씨 검정 진하게 */}
                     </div>
-                    { //좋아한 부분 내용
+                    { //user id == aaaa 가 좋아한 부분 내용
                         showLike && (
                             <div className='main_body_like'>
-                                {interest.map( (interest) => ( <InterestComponent interest={interest} onDelete={onDelete}/> ))} {/* 반복 렌더링 */}
+                                {interest.filter(value => value.userId === 'aaaa').map( (value) => ( <InterestComponent interest={value} onDelete={onDelete}/> ))} {/* 반복 렌더링 */}
                             </div>
                         )
                     }
-                    { //알림신청 부분 내용
+                    { //user id == aaaa 가 알림신청 부분 내용
                         showAlarm && (
                             <div className='main_body_alarm'>
-                                {alarm.map( (alarm) => ( <AlarmComponent alarm={alarm} onDelete2={onDelete2}/> ))} {/* 반복 렌더링 */}
+                                {alarm.filter(value => value.userId === 'aaaa').map( (value) => ( <AlarmComponent alarm={value} onDelete2={onDelete2}/> ))} {/* 반복 렌더링 */}
                             </div>
                         )
                     }

@@ -2,7 +2,10 @@
     margin: 0;
     padding: 10;
     box-sizing: border-box;
-
+}
+@font-face {
+    font-family: 'gugi';
+    src: url(../css/fonts/Gugi-Regular.ttf) format('truetype');
 }
 .HContainer {
     height: 130px;
@@ -17,8 +20,9 @@
 }
 
 .Prism {
+    font-family: 'gugi' ;
     font-size: 50px;
-    font-weight: bold;
+    font-weight: bold; 
     cursor: pointer;
 }
 
@@ -44,7 +48,6 @@
 }
 
 .login_btn {
-
     margin: 15px;
     display: flex;
     justify-content: center;
@@ -52,6 +55,13 @@
     cursor: pointer;
 }
 
+.logout_btn {
+    margin-left: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
 .Menubar {
     position: sticky;
     top: 0;
@@ -94,6 +104,7 @@ li {
 
 .dropdown_menu {
     position: absolute;
+    width: 200px;
     top: 100%;
     left: 0;
     background-color: white;
@@ -114,15 +125,23 @@ li {
 
 /* 알림창 */
 .notification_box {
-    position: fixed;
-    top: 5rem; /* 화면에서 보이게 조정 */
-    right: 3rem;
-    width: 400px;
-    height: 400px;
+    position: absolute;
+    top: 8%; /* 화면에서 보이게 조정 */
+    right: 5%;
+    width: 30%;
+    height: 40%;
     background-color: #fafad1;
     border-radius: 10px;
     padding: 20px;
     z-index: 1000;
+}
+
+.notification_list{
+    background-color: #fafad1;
+}
+
+.notification_box h3{
+    background-color: #fafad1;
 }
 
 /* 닫기 버튼 */
@@ -183,9 +202,10 @@ li {
 
 /* 모두 읽음 버튼 */
 .deleteAll {
+    position: absolute;
     width: 90%;
     height: 40px;
-    bottom: 20px;
+    bottom: 30px;
     left: 20px;
     background-color: #F08080;
     color: white;

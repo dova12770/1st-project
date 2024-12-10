@@ -4,11 +4,13 @@ import { GoGear } from "react-icons/go";
 import { useState } from 'react';
 import MyPageCategory from './MyPageCategory';
 import { useNavigate } from 'react-router-dom';
+import UserInfo from '../data/UserInfo';
 
 function MyPage() {
     const CateName = ['프로필', '후원한 프로젝트', '작성후기', '팔로워', '팔로잉'];
     const [selectedIndex, setSelectedIndex] = useState(0);
     const navigate = useNavigate();
+
 
     return (
         <div className='MyPage_Container'>
@@ -16,10 +18,10 @@ function MyPage() {
                 <div className='Avatar'>
                     <img src={userImg} alt='유저기본이미지' height='100px' width='100px' />
                 </div>
-                <div className='UserName'>김도현
-                    <div className='OptionGear' onClick={() => navigate('./MySetting')}><GoGear /></div>
+                <div className='UserName'>{UserInfo.find(user => user.userId === 'aaaa')?.userName || "알수없음"}
+                    <div className='OptionGear' onClick={() => navigate('/MySetting')}><GoGear /></div>
                 </div>
-                <div className='Prof_button' onClick={() => navigate('./MySetting')}>
+                <div className='Prof_button' onClick={() => navigate('/MySetting')}>
                     프로필 변경
                 </div>
             </div>
