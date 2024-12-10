@@ -9,14 +9,15 @@ import Alarm from "./Alarm";
 import Pay from "./Pay";
 import Account from "./Account";
 import accountDate from "../data/AccountDate";
+import UserInfo from "../data/UserInfo";
 
 function MySetting() {
 
     const CateName = ['프로필', '계정', '결재수단', '배송지', '알림'];
-    const [selectedIndex, setSelectedIndex] = useState(0); // 기본적으로 프로필 선택
+    const [selectedIndex, setSelectedIndex] = useState(0); 
     const [clickButton, setClickButton] = useState(false);
-    const [prof, setProf] = useState(profDate);
-    const [acc, setAcc] = useState(accountDate);
+    const [prof, setProf] = useState(UserInfo);
+    const [acc, setAcc] = useState(UserInfo);
     
     const renderContent = () => {
         switch (selectedIndex) {
