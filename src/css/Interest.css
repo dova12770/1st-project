@@ -38,11 +38,11 @@
 
 .main_body_like, .main_body_alarm {
     width: 100%;
-    padding: 5rem 7rem;
+    padding: 5rem 3rem;
     display: flex;
     flex-wrap: wrap;   
     /* justify-content: space-evenly;  */
-    gap: 30px 3rem;         /* 요소 간 간격 */
+    gap: 30px 2.5rem;         /* 요소 간 간격 */
 }
 
 .interest, .alarms {
@@ -63,11 +63,23 @@
     border-radius: 10px;
 }
 
-.interest_brand, .interest_content,
-.alarm_brand, .alarm_content{
+.interest_inImg, .alarm_inImg{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.interest_brand, .alarm_brand{
     margin-bottom: 5px;
     color: gray;
     font-size: 0.8rem;
+}
+
+.interest_content,.alarm_content{
+    margin-bottom: 5px;
+    color: rgb(83, 83, 83);
+    font-size: 0.8rem;
+    font-weight: bold;
 }
 
 .interest_title, .alarm_title{

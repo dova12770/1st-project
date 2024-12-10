@@ -3,58 +3,28 @@ let AlarmData = [
     {
         userId : 'aaaa',
         id : 'i001',
-        image : "Cake",
-        brand : "당보충 초코 케이크1",
-        title : 1000,
-        content: '/image/food1.jpg'
+        image : 'images/빙판길 아이젠.jpg',
+        brand : "Gaja",
+        title : "빙판길 아이젠",
+        content: '폭설 대비 필수품'
     },
     
     {
         userId : 'aaaa',
         id : 'i002',
-        image : "Cake",
-        brand : "당보충 초코 케이크2",
-        title : 2000,
-        content: '/image/food2.jpg'
+        image : 'images/스노우체인.jpg',
+        brand : "Gaja",
+        title : "스노우체인",
+        content: '폭설 대비 필수품'
     },
-    
-    {
-        userId : 'aaaa',
-        id : 'i003',
-        image : "Cake",
-        brand : "당보충 초코 케이크3",
-        title : 3000,
-        content: '/image/food3.jpg'
-    }
-    ,
-    
-    {
-        userId : 'aaaa',
-        id : 'i004',
-        image : "Cake",
-        brand : "당보충 초코 케이크4",
-        title : 4000,
-        content: '/image/food4.jpg'
-    }
-    ,
-    
-    {
-        userId : 'aaaa',
-        id : 'i005',
-        image : "Cake",
-        brand : "당보충 초코 케이크5",
-        title : 5000,
-        content: '/image/food5.jpg'
-    }
-    ,
-    
+
     {
         userId : 'bbbb',
         id : 'i005',
-        image : "Cake",
-        brand : "당보충 초코 케이크5",
-        title : 5000,
-        content: '/image/food5.jpg'
+        image : 'images/스노우체인.jpg',
+        brand : "Gaja",
+        title : "스노우체인",
+        content: '폭설 대비 필수품'
     }
 ] ;
     
