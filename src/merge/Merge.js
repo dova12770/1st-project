@@ -15,15 +15,18 @@ import InterestPage from '../pages/InterestPage';
 import HotCatecoryPage from '../pages/CategoryPages/HotCategoryPage';
 import NewCatecoryPage from '../pages/CategoryPages/NewCategoryPage';
 import OpenStandBy from '../pages/CategoryPages/OpenStandBy';
+import CloseStandBy from '../pages/CategoryPages/CloseStandBy';
+
 
 function Merge() {
     return (
         <Router>
             <div className="merge-container">
                 <Header />
-                {/* <HotCatecoryPage/> */}
+                <HotCatecoryPage/>
                 {/* <NewCatecoryPage/> */}
-                <OpenStandBy/>
+                {/* <OpenStandBy/> */}
+                {/* <CloseStandBy/> */}
                 <Routes>
                     {/* <Route path='/' element={<Body />} />
                     <Route path='/ptcr' element={<PtcrTotal />} />                   

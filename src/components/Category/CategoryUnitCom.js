@@ -1,6 +1,4 @@
-
 import '../../css/CategoryPages/HotCatecoryPage.css';
-import '../../css/CategoryPages/NewCatecoryPage.css';
 import { FaBell } from "react-icons/fa6";
 
 

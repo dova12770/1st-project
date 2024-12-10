@@ -1,6 +1,6 @@
 
 import { useState } from "react";
-import '../../css/CategoryPages/NewCatecoryPage.css';
+import '../../css/CategoryPages/HotCatecoryPage.css';
 import CategoryUnitCom from "../../components/Category/CategoryUnitCom";
 import CategoryNewState from "../../components/Category/CategoryComponentNew";
 

@@ -13,6 +13,7 @@
 
 .HCPInnerContainer{
     margin-top: 60px;
+    width: auto;
     display: flex;
     flex-direction: row;
 }
@@ -21,8 +22,16 @@
     margin-top: 50px;
 }
 
+.HCPHotSell{
+    margin-left: 10px;
+    margin-bottom: 10px;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
 .HCPInnerImg{
-    width: 400px;
+    width: 100%;
     height: 480px;
 }
 
@@ -76,8 +85,9 @@
 
 .HPCitemAdd{
     margin-left: 30px;
-    width: 700px;
+    width: 70%;
     height: 480px;
+    display: flex;
     position: relative;
 }
 
@@ -106,8 +116,12 @@
     font-weight: bold;
 }
 
+.HCPItemBox{
+    width: 100%;
+}
+
 .HCPItemImg{
-    width: 200px;
+    width: 100%;
     height: 250px;
     display: flex;
 }
