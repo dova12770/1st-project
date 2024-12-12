@@ -1,9 +1,9 @@
 import React from "react";
-import { useNavigate, useParams } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import '../particularpage/Ptcrpg2.css';
 import { CgShapeTriangle } from "react-icons/cg";
 import PtcrpgExpnRightCom from './PtcrpgExpnRightCom';
-import Datas from "../particularpage/data/Datas";
+
 
 
 function PtcrpgComBottom(props) {

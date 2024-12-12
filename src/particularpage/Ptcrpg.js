@@ -3,7 +3,6 @@ import PtcrpgComTop from '../component/PtcrpgComTop';
 import PtcrpgComBottom from '../component/PtcrpgComBottom';
 import Datas from './data/Datas';
 import { useParams } from 'react-router-dom';
-import ReviewComment from '../component/ReviewComment';
 
 function Ptcrpg() {
 

@@ -14,10 +14,8 @@ import HotCatecoryPage from '../pages/CategoryPages/HotCategoryPage';
 import NewCatecoryPage from '../pages/CategoryPages/NewCategoryPage';
 import OpenStandBy from '../pages/CategoryPages/OpenStandBy';
 import CloseStandBy from '../pages/CategoryPages/CloseStandBy';
-
 import { useState } from 'react';
 import Rank from '../pages/Rank';
-import PlanPage from '../particularpage/pages/PlanPage';
 import ScrollToTop from './ScrollToTop';
 import Datas from '../particularpage/data/Datas';
 import Ptcrpg from '../particularpage/Ptcrpg';
