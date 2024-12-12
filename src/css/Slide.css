@@ -2,6 +2,7 @@
     width: 800px;
     height: 300px;
     position: relative;
+    cursor: pointer;
 }
 
 .view {

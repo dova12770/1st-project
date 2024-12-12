@@ -1,8 +1,13 @@
+import { Navigate, useNavigate } from 'react-router-dom';
 import '../css/Slide.css';
 import { img01, img02, img03, img04, img05, img06, img07, img08 } from '../image/images';
 import { useState, useEffect } from 'react';
+import Datas from '../particularpage/data/Datas';
+
 
 function Slide() {
+
+    let Navigate = useNavigate();
 
     const [cnt, setCnt] = useState([
         0, 1, 2, 3, 4, 5, 6, 7
@@ -78,7 +83,7 @@ function Slide() {
                                 transform: `translateX(${-800 * curSlide}px)`,
                                 transition: 'all 0.7s ease-in-out'
                             }}
-                        ><img src={imgs[index]} className='imgconfig' /></div>
+                        ><img src={imgs[index]} className='imgconfig' onClick={()=> Navigate('/ptcr/' + Datas[index].idDT ) } /></div>
                         
                     })
                 };
