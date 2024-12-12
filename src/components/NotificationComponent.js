@@ -1,4 +1,4 @@
-
+import NotificationData from "../data/NotificationData";
 
 function NotificationComponent({ alarms, onDelete }){
 

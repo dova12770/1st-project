@@ -14,10 +14,16 @@ import UserInfo from '../data/UserInfo';
 function Header({ isLoggedIn, setIsLoggedIn }) {
     const [view, setView] = useState(false);
     const [menuOn, setMenuOn] = useState(false);
+
+    //알람 정보
     const [alarms, setAlarms] = useState(NotificationData);
+
+    // 알림창 상태
     const [isOpen, setIsOpen] = useState(false);
+
     const navigate = useNavigate();
 
+    // 클릭된 알람을 제거
     const onDelete = (id) => {
         const updatedAlarms = alarms.filter((value) => value.id !== id);
         setAlarms(updatedAlarms);
@@ -30,7 +36,7 @@ function Header({ isLoggedIn, setIsLoggedIn }) {
                     <span className='Prism'>Prism</span>
                 </div>
                 <div className='logoRight'>
-                    <div className='bell' onClick={() => {isLoggedIn ? setIsOpen(!isOpen) : setIsOpen(isOpen)}}>
+                    <div className='bell' onClick={() => {isLoggedIn ? setIsOpen(!isOpen) : alert("로그인 먼저 해주세요.")}}>
                         <CgBell /> 알림
                     </div>
                     <div className='bell' onClick={() => { isLoggedIn ? navigate('/interest') : alert("로그인 먼저 해주세요.") }}>
@@ -81,11 +87,14 @@ function Header({ isLoggedIn, setIsLoggedIn }) {
                         <h3> {UserInfo.find(user => user.userId === 'aaaa')?.userName || "알수없음"}  님 {alarms.filter(alarm => alarm.userId === 'aaaa').length}개의 알람이 있습니다.</h3>
                     </div>
                     <div className='notification_list'>
+                        {/* userid가 aaaa인 alarm 반복 렌더링 */}
                         {alarms.filter(alarm => alarm.userId === 'aaaa').map((alarm) => (
                             <NotificationComponent key={alarm.id} alarms={alarm} onDelete={onDelete} />
                         ))}
                     </div>
-                    <button className='deleteAll' onClick={() => setAlarms([])}>모두 읽음</button>
+                    <button className='deleteAll' onClick={() => 
+                        setAlarms([]) //모든 알람을 삭제 새로운 배열 생성
+                        }>모두 읽음</button>
                 </div>
             )}
         </div>
