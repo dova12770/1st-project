@@ -1,22 +1,22 @@
 import '../../css/CategoryPages/OpenStandBy.css';
 import { BsBellFill } from "react-icons/bs";
-import Datas from '../../particularpage/data/Datas';
 import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 
 
-function OpenStandByCom(props){
+
+function CloseStandByCom(props){
 
     let [alCnt,setAlCnt] = useState(0);
 
     const Navigate = useNavigate();
 
     return(<div className="OBSCardSlot">
-        <div className="OBSCardImgBox" onClick={()=>alert('상품 준비중 입니다.')}> <img className="OBSCardImg" src={props.OpenComponent[props.index].OBSImage}/> </div>
+        <div className="OBSCardImgBox" onClick={()=>Navigate('/ptcr/'+ props.CloseComponent[props.index].id)}> <img className="OBSCardImg" src={props.CloseComponent[props.index].OBSImage}/> </div>
         <div className="OBSCardDetailCon"  onClick={()=>alert('상품 준비중 입니다.')}>
-            <div className="OBSCardDetailCompany">{props.OpenComponent[props.index].OBSCompany}</div>
-            <div className="OBSCardDetailTitle">{props.OpenComponent[props.index].OBSTitle}</div>
-            <div className="OBSCardDetailDetail">{props.OpenComponent[props.index].OBSDetail}</div>
+            <div className="OBSCardDetailCompany">{props.CloseComponent[props.index].OBSCompany}</div>
+            <div className="OBSCardDetailTitle">{props.CloseComponent[props.index].OBSTitle}</div>
+            <div className="OBSCardDetailDetail">{props.CloseComponent[props.index].OBSDetail}</div>
             <div className='OBSEmptyBox'></div>
         </div>
         <div className="OBSAlram">
@@ -31,4 +31,4 @@ function OpenStandByCom(props){
     );
 }
 
-export default OpenStandByCom;
+export default CloseStandByCom;

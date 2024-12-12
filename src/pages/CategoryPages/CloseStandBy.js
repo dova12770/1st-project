@@ -1,7 +1,7 @@
 import { useState } from "react";
 import '../../css/CategoryPages/OpenStandBy.css'
 import CloseComponent from '../../components/Category/CloseComponent';
-import OpenStandByCom from "../../components/Category/OpenStandByCom";
+import CloseStandByCom from "../../components/Category/CloseStandByCom";
 
 
 function OpenStandBy(){
@@ -18,7 +18,7 @@ function OpenStandBy(){
 
                 {
                     repeat.map((_,index) => {
-                        return <OpenStandByCom index={index} OpenComponent={CloseComponent}  />
+                        return <CloseStandByCom index={index} CloseComponent={CloseComponent}  />
                     })
                 }
 
