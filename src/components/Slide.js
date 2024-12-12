@@ -1,15 +1,20 @@
+import { Navigate, useNavigate } from 'react-router-dom';
 import '../css/Slide.css';
 import { img01, img02, img03, img04, img05, img06, img07, img08 } from '../image/images';
 import { useState, useEffect } from 'react';
+import Datas from '../particularpage/data/Datas';
+
 
 function Slide() {
+
+    let Navigate = useNavigate();
 
     const [cnt, setCnt] = useState([
         0, 1, 2, 3, 4, 5, 6, 7
     ])
     //자동 슬라이드
     const [intervalId, setIntervalId] = useState(null);
-    let [imgs, setImges] = useState([img01, img02, img03, img04, img05, img06, img07, img08]);
+    let [imgs, setImges] = useState(['/images/라이프클락1.jpg','/images/방염담요1.jpg', '/images/생존가방.jpg', '/images/구급가방.jpg', '/images/방독면.jpg', '/images/부착식소화기1.jpg', '/images/차수문.jpg', '/images/지진대피 방재모자.jpg']);
     const [curSlide, setCurSlide] = useState(0);
 
     const StartSlideIndex = 0; //시작 슬라이드 번호
@@ -78,7 +83,7 @@ function Slide() {
                                 transform: `translateX(${-800 * curSlide}px)`,
                                 transition: 'all 0.7s ease-in-out'
                             }}
-                        ><img src={imgs[index]} className='imgconfig' /></div>
+                        ><img src={imgs[index]} className='imgconfig' onClick={()=> Navigate('/ptcr/' + Datas[index].idDT ) } /></div>
                         
                     })
                 };
