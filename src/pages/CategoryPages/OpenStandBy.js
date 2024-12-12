@@ -11,7 +11,7 @@ function OpenStandBy(){
     return(
         <div>
             <div className="OBSCon">
-                <div><h1 className="OSBTitle">공개예정</h1></div>
+                <div><h2 className="OSBTitle">공개예정</h2></div>
             </div>
             
             <div className="OBSMenuContainer">

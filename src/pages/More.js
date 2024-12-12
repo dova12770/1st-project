@@ -15,7 +15,7 @@ function More() {
 
     return (
         <div className='morediv'>
-            <div className='texttitle'><h1 style={{marginTop:'100px'}}>금주의 추천 프로젝트</h1></div>
+            <div className='texttitle'><h2 style={{marginTop:'100px'}}>금주의 추천 프로젝트</h2></div>
 
             <div className='cardcontainer'>
 

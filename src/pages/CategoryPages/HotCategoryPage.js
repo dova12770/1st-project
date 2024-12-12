@@ -12,7 +12,7 @@ function HotCatecoryPage() {
     return (
         <div className="HCPContainer">
             {/* 카테고리 전체 컨테이너 */}
-            <h1 className="CatecoryTitle">인기 제품</h1>
+            <h2 className="CatecoryTitle">인기 제품</h2>
             {/* 카테고리 타이틀 */}
 
         

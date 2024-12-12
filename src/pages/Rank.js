@@ -16,7 +16,7 @@ function Rank() {
     return (
         <div>
             <div>
-                <div className="topranktitle"><h1>인기 프로젝트</h1>
+                <div className="topranktitle"><h2>인기 프로젝트</h2>
 
                 </div>
                 {
@@ -24,7 +24,7 @@ function Rank() {
                         return <Rankprojeck item={item} imgs={imgs} index={index} Creatorinfo={Creatorinfo}/>
                     })
                 }
-                <div className="toprankfooter"><h1>인기 더보기</h1></div>
+                <div className="toprankfooter"><h1>더보기</h1></div>
             </div>
         </div>
     )

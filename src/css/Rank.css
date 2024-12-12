@@ -34,14 +34,16 @@
     
 }
 .ranknum{
-    margin-left: 5px;
+    margin-left: 8px;
     width: 13px;
     color:  #F08080;
 }
 
 .topranktitle{
     width: 250px;
-    height: 100px;
+    height: 60px;
+    padding-top: 10px;
+    margin-left: -35px;
     text-align: center;
     color:  #F08080;
 }
@@ -51,4 +53,5 @@
     height: 100px;
     text-align: center;
     cursor: pointer;
+    font-size: 8px;
 }

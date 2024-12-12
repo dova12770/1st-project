@@ -12,11 +12,11 @@ function Thisproject(props) {
             <div className='CardSlot'>
             <div className='maincard'>
                 <img src={props.imgs[props.index]} className='moreimg' /></div>
-            <h2 className='linkpointer'>{props.Creatorinfo[props.index].title}</h2>
-            <h3 style={{ color: '#F08080' }}
-                className='linkpointer'>{props.Creatorinfo[props.index].company}</h3>
-            <h4 className='subtitle linkpointer'>{props.Creatorinfo[props.index].subtitle}</h4>
-            <h5 className='tagtitle'>{props.Creatorinfo[props.index].tag}</h5>
+            <h3 className='linkpointer'>{props.Creatorinfo[props.index].title}</h3>
+            <h5 style={{ color: '#F08080' }}
+                className='linkpointer'>{props.Creatorinfo[props.index].company}</h5>
+            <h5 className='subtitle linkpointer'>{props.Creatorinfo[props.index].subtitle}</h5>
+            <h6 className='tagtitle'>{props.Creatorinfo[props.index].tag}</h6>
         </div>
         </div>
     );

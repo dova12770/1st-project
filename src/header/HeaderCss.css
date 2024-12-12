@@ -21,7 +21,8 @@
 
 .Prism {
     font-family: 'gugi' ;
-    font-size: 50px;
+    font-size: 45px;
+    margin: 5px 5px;
     font-weight: bold; 
     cursor: pointer;
 }
@@ -35,8 +36,8 @@
 .logoRight {
     width: 35%;
     display: flex;
-    justify-content: center;
-    font-size: 20px;
+    justify-content: right;
+    font-size: 18px;
 }
 
 .bell {
@@ -56,7 +57,7 @@
 }
 
 .logout_btn {
-    margin-left: 5px;
+    margin-left: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -81,7 +82,7 @@ ul {
 
 li {
     margin-top: 10px;
-    font-size: 20px;
+    font-size: 18px;
     padding: 10px;
     font-weight: bold;
     cursor: pointer;
@@ -98,13 +99,17 @@ li {
     position: relative;
 }
 
+.caList{
+    font-size: 15px;
+}
+
 .caList:hover {
     color: #F08080;
 }
 
 .dropdown_menu {
     position: absolute;
-    width: 200px;
+    width: 150px;
     top: 100%;
     left: 0;
     background-color: white;
@@ -120,6 +125,7 @@ li {
 
 .dropdown-menu li {
     margin: 5px 0;
+    font-size: 18px;
 }
 
 

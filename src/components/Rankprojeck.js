@@ -13,9 +13,9 @@ function Rankprojeck(props){
                 <div><img src={props.imgs[props.index]} className='topimg' /> </div>
                 <div><h4 className='ranknum'>{props.item}</h4></div>
                 <div>
-                    <div><h3>{props.Creatorinfo[props.index].title}</h3></div>
+                    <div><h4>{props.Creatorinfo[props.index].title}</h4></div>
                     <div className='subtitle'><h4>{props.Creatorinfo[props.index].subtitle}</h4></div>
-                    <div><h5>{props.Creatorinfo[props.index].tag}</h5></div>
+                    <div><h6>{props.Creatorinfo[props.index].tag}</h6></div>
                 </div>
             </div>
         </div>
