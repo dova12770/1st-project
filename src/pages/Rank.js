@@ -24,7 +24,7 @@ function Rank() {
                         return <Rankprojeck item={item} imgs={imgs} index={index} Creatorinfo={Creatorinfo}/>
                     })
                 }
-                <div className="toprankfooter"><h1>인기 더보기</h1></div>
+                <div className="toprankfooter" onClick={()=>{alert('준비중 입니다.')}}><h1>인기 더보기</h1></div>
             </div>
         </div>
     )

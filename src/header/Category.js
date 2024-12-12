@@ -12,13 +12,13 @@ function Category() {
 
     return (
         <div className='dropdown_menu'>
-            <li className='caList'><CgMicrosoft /> 전체</li>
-            <li className='caList'><FaFireAlt /> 화재</li>
-            <li className='caList'><FaCloudShowersWater /> 태풍/호우</li>
-            <li className='caList'><RiEarthquakeLine /> 지진</li>
-            <li className='caList'><FaRegSnowflake /> 대설/한파</li>
-            <li className='caList'><FaSun /> 폭염</li>
-            <li className='caList'><RiSurgicalMaskLine /> 전염병</li>
+            <li className='caList' onClick={()=>{alert('준비중 입니다.')}}><CgMicrosoft /> 전체</li>
+            <li className='caList' onClick={()=>{alert('준비중 입니다.')}}><FaFireAlt /> 화재</li>
+            <li className='caList' onClick={()=>{alert('준비중 입니다.')}}><FaCloudShowersWater /> 태풍/호우</li>
+            <li className='caList' onClick={()=>{alert('준비중 입니다.')}}><RiEarthquakeLine /> 지진</li>
+            <li className='caList' onClick={()=>{alert('준비중 입니다.')}}><FaRegSnowflake /> 대설/한파</li>
+            <li className='caList' onClick={()=>{alert('준비중 입니다.')}}><FaSun /> 폭염</li>
+            <li className='caList' onClick={()=>{alert('준비중 입니다.')}}><RiSurgicalMaskLine /> 전염병</li>
         </div>
     )
 }

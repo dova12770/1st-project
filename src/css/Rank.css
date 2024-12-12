@@ -54,7 +54,7 @@
     cursor: pointer;
 }
 .rank{
-    height: 85%;
+    height: 90%;
     overflow: hidden;
     overflow-y: scroll;
 }
