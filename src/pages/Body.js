@@ -11,9 +11,9 @@ function Body() {
 
     return (
         <div className="bodyFrame">
+            <div><Slide/></div>
             <div className="bodyaside">
-                <div><Slide/><More/></div>
-                <Rank/>
+                <More/><Rank/>
                 </div>
             </div>
             // <div className="chat"><SideChat/></div> 임시 차단

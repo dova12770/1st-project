@@ -80,7 +80,7 @@ function Slide() {
                     cnt.map((item, index) => {
                         return <div
                             style={{
-                                transform: `translateX(${-800 * curSlide}px)`,
+                                transform: `translateX(${-900 * curSlide}px)`,
                                 transition: 'all 0.7s ease-in-out'
                             }}
                         ><img src={imgs[index]} className='imgconfig' onClick={()=> Navigate('/ptcr/' + Datas[index].idDT ) } /></div>

@@ -15,7 +15,7 @@ function Rank() {
 
     return (
         <div>
-            <div>
+            <div className='rank'>
                 <div className="topranktitle"><h1>인기 프로젝트</h1>
 
                 </div>

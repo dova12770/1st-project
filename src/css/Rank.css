@@ -17,13 +17,13 @@
 .toprank{
     margin: 20px;
     width: 250px;
-    height: 100px;
+    height: 20%;
     cursor: pointer;
 }
 
 .topimg{
     width: 80px;
-    height: 80px;
+    height: 100%;
     border-radius: 10px;   
     cursor: pointer;
 }
@@ -40,15 +40,21 @@
 }
 
 .topranktitle{
+    margin-top: 30%;
     width: 250px;
-    height: 100px;
+    height: 10%;
     text-align: center;
     color:  #F08080;
 }
 
 .toprankfooter{
     width: 250px;
-    height: 100px;
+    height: 10%;
     text-align: center;
     cursor: pointer;
+}
+.rank{
+    height: 85%;
+    overflow: hidden;
+    overflow-y: scroll;
 }
