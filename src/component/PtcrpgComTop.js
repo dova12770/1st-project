@@ -35,7 +35,7 @@ function PtcrpgComTop(props){
                         <div className='introRight1'>
                             <div>
                                 <div><p style={{ fontSize: '10px' }}>모인금액</p></div>
-                                <div><p style={{ fontSize: '25px' }}>{props.data[0].convergeAmountDT}<span style={{ fontSize: '10px' }}> 원</span><span style={{ fontSize: '15px' }}> {((props.data[0].convergeAmountDT/props.data[0].targetAmountDT)*100).toFixed(2)}%</span></p></div>
+                                <div><p style={{ fontSize: '25px' }}>{props.data[0].convergeAmountDT.toLocaleString()}<span style={{ fontSize: '10px' }}> 원</span><span style={{ fontSize: '15px' }}> {((props.data[0].convergeAmountDT/props.data[0].targetAmountDT)*100).toFixed(2)}%</span></p></div>
                             </div>
                             <br></br>
                             <div>
@@ -57,7 +57,7 @@ function PtcrpgComTop(props){
                                     <p>예상 발송 시작일</p>
                                 </div>
                                 <div>
-                                    <p>{props.data[0].targetAmountDT}원</p>
+                                    <p>{props.data[0].targetAmountDT.toLocaleString()}원</p>
                                     <p>{props.data[0].fundDate1DT}일 ~ {props.data[0].fundDate2DT}일</p>
                                     <p>목표금액 달성시 {props.data[0].paydayDT}에 결제 진행</p>
                                     <p>{props.data[0].goDeliveryDT}</p>
