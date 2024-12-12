@@ -9,7 +9,7 @@
 
 .bodyaside{
     width: 100%;
-    height: 100%;
+    height: 850px;
     position: relative;
     display: flex;
     flex-direction: row;
@@ -20,4 +20,8 @@
     display: flex;
     right: 0px;
     z-index: 1;
+}
+
+.index-item {
+    font-size: 15px;
 }

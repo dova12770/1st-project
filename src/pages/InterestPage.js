@@ -35,7 +35,7 @@ function InterestPage(){
         <div>
             <div className='interest_container'>
                 <div className='interest_body'>
-                    <div className='title_body'> <h1>관심 프로젝트</h1> </div>
+                    <div className='title_body'> <h2>관심 프로젝트</h2> </div>
                     <div className='top_body'>
                         <div className='l_body' onClick={()=>{ setShowLike((showLike) => { 
                                 setShowAlarm(false); //알림신청 초기화

@@ -11,22 +11,23 @@
 }
 
 .OSBTitle{
-    margin-top: 50px;
-    margin-left: 30px;
+    margin: 50px 0px 30px 30px;
     display: flex;
 }
 
 .OBSMenuContainer{
     margin-top: 20px;
+    padding: 0px 20px;
     display: flex;
+    justify-content: space-around;
     width: auto;
     height: 700px;
     flex-wrap: wrap;
 }
 
 .OBSCardSlot{
-    padding: 8px;
-    width: 25%;
+    padding: 15px;
+    width: 23%;
     height: 700px;
     display: flex;
     flex-direction: column;
@@ -77,6 +78,7 @@
     color: #F08080;
     display: flex;
     align-items: center;
+    font-size: small;
     font-weight: bold;
     margin-bottom: 10px;
 }
@@ -85,9 +87,9 @@
     text-align: center;
     align-content: center;
     color: #F08080;
-    border : 3px solid #F08080;
-    height: 50px;
+    border : 2px solid #F08080;
+    height: 40px;
     border-radius: 10px;
-    font-size: large;
+    font-size: medium;
     font-weight: 550;
 }

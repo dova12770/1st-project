@@ -7,14 +7,13 @@
 
 
 .HCPContainer{
-    margin: 0 auto;
+    padding-left: 30px;
+    padding-right: 30px;
     position: relative;
-    margin-left: 30px;
 }
 
 .HCPInnerContainer{
-    margin-top: 60px;
-    margin-right: 20px;
+    margin: 80px 0px 100px 10px;
     width: auto;
     display: flex;
     flex-direction: row;
@@ -27,7 +26,7 @@
 .HCPHotSell{
     margin-left: 10px;
     margin-bottom: 10px;
-    width: 30%;
+    width: 40%;
     display: flex;
     flex-direction: column;
     cursor: pointer;
@@ -35,7 +34,8 @@
 
 .HCPInnerImg{
     width: 100%;
-    height: 480px;
+    height: 500px;
+    padding: 10px 0px;
 }
 
 .HCPInnerName{
@@ -65,7 +65,7 @@
 }
 
 .HCPHotSellUnitImg{
-    width: 108px;
+    width: 100px;
     height: 70px;
 }
 
@@ -96,7 +96,8 @@
 
 .HCPItemTitle{
     width: 100%;
-    height: 100px;
+    height: 80px;
+    margin: 50px 20px;
 }
 
 .HCPItemShot{
@@ -113,8 +114,8 @@
 }
 
 .HCPItemSub{
-    margin-top: 10px;
-    font-size: large;
+    margin-top: 20px;
+    font-size: medium;
     color: gray;
     font-weight: bold;
 }
@@ -130,7 +131,7 @@
 }
 
 .HCPItemdetail{
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 .HCPItemdetailTitle{
@@ -139,7 +140,7 @@
 }
 
 .HCPItemdetailWord{
-    font-size: small;
+    font-size: smaller;
     color: gray;
     font-weight: bold;
 }

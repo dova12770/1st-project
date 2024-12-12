@@ -9,11 +9,11 @@
 }
 
 .texttitle{
-    margin-top: 50px;
-    margin-left: 15px;
+    margin: 40px 0px 0px 50px;
     padding: 0px;
-    height: 50px;
+    height: 40px;
     color:  #F08080;
+    background-color: none;
 }
 
 .cardcontainer{
@@ -29,7 +29,7 @@
 }
 
 .maincard{
-    margin: 0px;
+    margin: 10px 0px;
     padding: 0px;
     width: 200px;
     display: flex;
@@ -63,6 +63,7 @@
 }
 .linkpointer{
     cursor: pointer;
+    margin: 3px 0px;
 }
 
 .CardSlot{

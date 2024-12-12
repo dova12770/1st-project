@@ -36,7 +36,7 @@ function CategoryUnitCom(props) {
                     <div className="HPCitemAdd">
                         {/* 제품 옆 */}
                         <div className="HCPItemTitle">
-                            <h1>{props.stating[props.index].MainTitle}</h1>
+                            <h2>{props.stating[props.index].MainTitle}</h2>
                             <p className="HCPItemSub">{props.stating[props.index].SubTitle}</p>
                         </div>
                         <div className="HCPItemShot">

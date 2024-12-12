@@ -22,10 +22,11 @@
     list-style: none;
     margin-left: 185px;
     z-index: 3;
+    color: rgb(138, 138, 138);
 }
 
 .index-item.active {
-    color: blue;
+    color:#F08080;
 }
 
 .slide {
@@ -39,6 +40,10 @@
     background-color: white;
     border: none;
     cursor: pointer;
+    color: rgb(138, 138, 138);
+}
+.prev-button:hover {
+    color: lightcoral;
 }
 
 .next-button {
@@ -46,4 +51,8 @@
     background-color: white;
     border: none;
     cursor: pointer;
+    color: rgb(138, 138, 138);
+}
+.next-button:hover {
+    color: lightcoral;
 }

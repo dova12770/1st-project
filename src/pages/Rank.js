@@ -15,8 +15,8 @@ function Rank() {
 
     return (
         <div>
-            <div className='rank'>
-                <div className="topranktitle"><h1>인기 프로젝트</h1>
+            <div className='rankBorder'>
+                <div className="topranktitle"><h2>인기 프로젝트</h2>
 
                 </div>
                 {
@@ -24,7 +24,7 @@ function Rank() {
                         return <Rankprojeck item={item} imgs={imgs} index={index} Creatorinfo={Creatorinfo}/>
                     })
                 }
-                <div className="toprankfooter" onClick={()=>{alert('준비중 입니다.')}}><h1>인기 더보기</h1></div>
+                <div className="toprankfooter" onClick={()=>{alert('준비중 입니다.')}}><h1 style={{marginTop:'30px'}}>더보기</h1></div>
             </div>
         </div>
     )
