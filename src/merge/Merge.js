@@ -4,7 +4,7 @@ import './Merge.css';
 import Body from '../pages/Body';
 import MyPage from '../myPage/MyPage';
 import MySetting from '../myPage/MySetting';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import MainFooter from '../footer/MainFooter';
 import HeaderTotal from './HeaderTotal';
 import LoginPage from '../pages/LoginPage';
@@ -27,7 +27,7 @@ function Merge() {
     const [isLoggedIn, setIsLoggedIn] = useState(false);
 
     return (
-        <Router>
+        <BrowserRouter basename={process.env.PUBLIC_URL}>
             <ScrollToTop />
             <div className="merge-container">
                 <Header isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} />
@@ -54,7 +54,7 @@ function Merge() {
                 </Routes>
                 <MainFooter />
             </div>
-        </Router>
+        </BrowserRouter>
     );
 }
 
